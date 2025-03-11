@@ -1,0 +1,1369 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>News</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css?v=fa2d15c4" />
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=b3ba4146"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/particles.min.js"></script>
+    <script src="_static/custom.js"></script>
+    <script src="_static/publications.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/custom-bootstrap-sphinx.js "></script>
+
+  </head><body>
+  
+  <a href="https://github.com/networkit/networkit"
+     class="visible-desktop hidden-xs"><img style="position: absolute; width:auto; height: auto; max-width: 200px; top:
+     0px; right: 0; border: 0; z-index: 3;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>  
+
+
+  
+      <div id="fancy-particles-small"></div>
+  <div id="navbar" class="navbar navbar-default ">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div style="float:left;height:auto; line-height:30px;">
+          <div style="overflow:hidden; line-height:15px">
+              <span style="display:block">
+                <a style="text-decoration: none; padding-top: 19.5px; padding-left:15px; height:30px;" class="navbar-brand" href="index.html">
+                  NetworKit</a>
+              </span>
+              <div style="font-size:9pt; clear:left;">Large-Scale Network Analysis</div>              
+          </div>
+        </div>
+      </div>
+
+
+
+        <div id="main-nav" class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="get_started.html">Get Started</a></li>
+                <li><a href="dev-docs/index.html">Documentation</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="networkit-day.html">NetworKit Day</a></li>
+                <li><a href="credits.html">Credits & References</a></li>
+            
+            
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+    
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <section id="news">
+<h1>News<a class="headerlink" href="#news" title="Permalink to this heading">¶</a></h1>
+<section id="hiddenbiggerheadingfont">
+<h2><span class="hidden">HiddenBiggerHeadingFont</span><a class="headerlink" href="#hiddenbiggerheadingfont" title="Permalink to this heading">¶</a></h2>
+<section id="mar-10-2025-networkit-11-1-released">
+<h3>Mar 10, 2025: <strong>NetworKit 11.1 released</strong><a class="headerlink" href="#mar-10-2025-networkit-11-1-released" title="Permalink to this heading">¶</a></h3>
+<dl class="simple">
+<dt><span class="underline">New features</span>:</dt><dd><ul class="simple">
+<li><p>New RB-Matrix and Graph reader. It is available via <code class="code docutils literal notranslate"><span class="pre">nk.graphio.RBGraphReader</span></code> or <code class="code docutils literal notranslate"><span class="pre">nk.readGraph(path,format=nk.graphio.Format.RB)</span></code> (<a class="reference external" href="https://github.com/networkit/networkit/pull/1264">#1264</a>).</p></li>
+<li><p>The MatrixMarket reader is now available in C++ and Python (<a class="reference external" href="https://github.com/networkit/networkit/pull/1236">#1236</a>, <a class="reference external" href="https://github.com/networkit/networkit/pull/1262/">#1262</a>)</p></li>
+<li><p>Add new function <code class="code docutils literal notranslate"><span class="pre">isBipartite</span></code>, which checks whether a given undirected graph is bipartite. Currently only implemented in C++ (<a class="reference external" href="https://github.com/networkit/networkit/pull/1304">#1304</a>).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">nk.graphtools.topologicalSort</span></code> now has an additional parameter <code class="code docutils literal notranslate"><span class="pre">nodeIdMap</span></code>, supplying a map of node ids, if the nodes in the graph are non-contiuous (<a class="reference external" href="https://github.com/networkit/networkit/pull/1241/">#1241</a>).</p></li>
+<li><p>Refactored the existing implementation of the Barabasi-Albert graph generator, leading to a significant speedup (<a class="reference external" href="https://github.com/networkit/networkit/pull/1175">#1175</a>) for multicore systems due to parallelization. The new implementation is based on “Scalable generation of scale-free graphs” by Sanders and Schulz.</p></li>
+<li><p>A similar treatment was done for RMat-Generator, the Configuration Model and the Chung-Lu Model (<a class="reference external" href="https://github.com/networkit/networkit/pull/1164">#1164</a>, <a class="reference external" href="https://github.com/networkit/networkit/pull/1186">#1186</a>, <a class="reference external" href="https://github.com/networkit/networkit/pull/1177">#1177</a>)</p></li>
+<li><p>LAMG-solver now supports multiple connected components in parallel (<a class="reference external" href="https://github.com/networkit/networkit/pull/1212">#1212</a>).</p></li>
+<li><p>The <code class="code docutils literal notranslate"><span class="pre">vizbridges</span></code> module now also supports the visualization of edge attributes (<a class="reference external" href="https://github.com/networkit/networkit/pull/1230">#1230</a>).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">DynBetweennessOneNode</span></code> (in module <code class="code docutils literal notranslate"><span class="pre">centrality</span></code>) now also supports weighted graphs (<a class="reference external" href="https://github.com/networkit/networkit/pull/1245">#1245</a>).</p></li>
+</ul>
+</dd>
+<dt><span class="underline">New algorithms</span>:</dt><dd><ul class="simple">
+<li><p>Add <a class="reference external" href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=7963e9feffe1c9362eb1a69010a5139d1da3661e">Left-Right Planarity Test</a> algorithm by U. Brandes, which is used to determine whether a given graph is planar. This algorithm is available in C++ in the new <code class="code docutils literal notranslate"><span class="pre">planarity</span></code> module. Thanks for <a class="reference external" href="https://github.com/Schwarf">&#64;Schwarf</a> for the contribution.</p></li>
+<li><p>Add b-Suitor algorithm both in a static version based on <a class="reference external" href="https://www.osti.gov/servlets/purl/1418504">Efficient Approx. Algorithms for weighted b-Matching</a> by Khan et al. and a edge dynamic version based on <a class="reference external" href="https://arxiv.org/abs/2410.09965">A Fully-dynamic Approximation Algorithm for Maximum Weight b-Matchings in Graphs</a> by Brandt-Tumescheit et al. Both algorithms are available in C++ and Python in the <code class="code docutils literal notranslate"><span class="pre">matching</span></code> module.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Further changes and improvements</span>:</dt><dd><ul class="simple">
+<li><p>Python 3.13 and Numpy 2.X is fully supported, Python versions <code class="code docutils literal notranslate"><span class="pre">&lt;3.10</span></code> is not supported anymore. This means, that wheels will only be available for 3.10 or higher.</p></li>
+<li><p>The oldest supported compiler are now GCC 10, LLVM 10. This enables the usage of C++20 features in the code base.</p></li>
+<li><p>Refactor CI pipeline (github actions) in order to detect memory leaks. As a result several minor possible leaks have been resolved (<a class="reference external" href="https://github.com/networkit/networkit/pull/1283">#1283</a>).</p></li>
+<li><p>As shown by Sahu et. al in “GVE-Leiden: Fast Leiden Algorithm for Community Detection in Shared Memory Setting” the current implementation of <code class="code docutils literal notranslate"><span class="pre">ParallelLeiden</span></code> might create a small fraction of disconnected communities. This behaviour is now documented and will be fixed in a future update.</p></li>
+<li><p>Building NetworKit via <code class="code docutils literal notranslate"><span class="pre">setup.py</span></code> does not anymore detect compatible compilers. This is now done in CMake directly, making the building process more robust.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Notable Bug-Fixes</span>:</dt><dd><ul class="simple">
+<li><p>Fix attribute assignment from another attribute <code class="code docutils literal notranslate"><span class="pre">attr[i]</span> <span class="pre">=</span> <span class="pre">attr[j]</span></code> and general copy instructions (<a class="reference external" href="https://github.com/networkit/networkit/pull/1279">#1279</a>, <a class="reference external" href="https://github.com/networkit/networkit/pull/1251">#1251</a>).</p></li>
+<li><p>Fix edge attributes indexing on dynamic graphs (edge removal, insertion) (<a class="reference external" href="https://github.com/networkit/networkit/pull/1257">#1257</a>, <a class="reference external" href="https://github.com/networkit/networkit/pull/1257">#1299</a>).</p></li>
+<li><p>Fixed a bug in <code class="code docutils literal notranslate"><span class="pre">SignalHandler</span></code>, which led to inconsistent behavior when interrupting parallel code (<a class="reference external" href="https://github.com/networkit/networkit/pull/1301">#1301</a>).</p></li>
+<li><p>Fix <code class="code docutils literal notranslate"><span class="pre">RMatGenerator</span></code> for instances where the number of nodes exceeded the limit of <code class="code docutils literal notranslate"><span class="pre">uint32_t</span></code> (<a class="reference external" href="https://github.com/networkit/networkit/pull/1268">#1268</a>).</p></li>
+<li><p>Fix the product of two <code class="code docutils literal notranslate"><span class="pre">DynamicMatrix</span></code> instances (<a class="reference external" href="https://github.com/networkit/networkit/pull/1252">#1252</a>).</p></li>
+<li><p>Fix a problem in <code class="code docutils literal notranslate"><span class="pre">DynDijkstra</span></code>, whereby the shortest path itself was not created properly (<a class="reference external" href="https://github.com/networkit/networkit/pull/1240">#1240</a>).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">addEdge</span></code> now correctly adds missing nodes on dynamic graphs with id holes (<a class="reference external" href="https://github.com/networkit/networkit/pull/1232">#1232</a>).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">networkit.community.OverlappingNMIDistance</span></code> is working again (<a class="reference external" href="https://github.com/networkit/networkit/pull/1229">#1229</a>).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">networkit.generators.PowerlawDegreeSequence</span></code> is working again (<a class="reference external" href="https://github.com/networkit/networkit/pull/1196">#1196</a>).</p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="mar-15-2024-networkit-day-2024">
+<h3>Mar 15, 2024: <strong>NetworKit Day 2024</strong><a class="headerlink" href="#mar-15-2024-networkit-day-2024" title="Permalink to this heading">¶</a></h3>
+<p>As already announced - we are looking forward to a new NetworKit Day in 2024,
+taking place on April 9th from 2 p.m. to 6 p.m. (CEST) online via Zoom.
+Registration is mandatory (to receive the Zoom link), but free of charge.</p>
+<p>This event is - like the previous ones - about interacting with the community.
+We share our latest updates, provide insights for new users and also offer two
+short tutorials: one for beginners and one for advanced users. We also intend
+to discuss future development directions and receive feedback on the current
+status of NetworKit.</p>
+<p>We are also pleased to feature two invited guest talks by Jonathan Donges
+(Potsdam Institute for Climate Impact Research) and Kathrin Hanauer
+(University of Vienna).</p>
+<p>The program of the event can be found on the event subpage:
+<a class="reference external" href="https://networkit.github.io/networkit-day.html">https://networkit.github.io/networkit-day.html</a></p>
+<p>Link for registration:
+<a class="reference external" href="https://www.eventbrite.de/e/networkit-day-2024-nd24-tickets-825016084317">https://www.eventbrite.de/e/networkit-day-2024-nd24-tickets-825016084317</a></p>
+<p>Looking forward to seeing you on April 9th!</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="feb-06-2024-save-the-date-networkit-day-2024">
+<h3>Feb 06, 2024: <strong>Save the Date: NetworKit Day 2024</strong><a class="headerlink" href="#feb-06-2024-save-the-date-networkit-day-2024" title="Permalink to this heading">¶</a></h3>
+<p>We are happy to announce a new NetworKit Day. The event will take place on April, 9th 2024 - starting at 1 p.m. and ending at 6 p.m CET. Details
+concerning the program schedule will be shared at a later date.</p>
+<p>Best Wishes!</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="jan-30-2024-networkit-11-0-released">
+<h3>Jan 30, 2024: <strong>NetworKit 11.0 released</strong><a class="headerlink" href="#jan-30-2024-networkit-11-0-released" title="Permalink to this heading">¶</a></h3>
+<dl class="simple">
+<dt><span class="underline">New features</span>:</dt><dd><ul class="simple">
+<li><p>The <code class="code docutils literal notranslate"><span class="pre">graphio</span></code> module now supports guessing the file format of a given graph. <code class="code docutils literal notranslate"><span class="pre">nk.graphio.guessFileFormat</span></code> either returns a supported
+graph format from the list (see: <a class="reference external" href="https://networkit.github.io/dev-docs/python_api/graphio.html#networkit.graphio.Format">https://networkit.github.io/dev-docs/python_api/graphio.html#networkit.graphio.Format</a>) or an <code class="code docutils literal notranslate"><span class="pre">IOError</span></code>.
+This functionality is used now, if a graph is read by <code class="code docutils literal notranslate"><span class="pre">graphio.readGraph</span></code> without giving the file format. See the corresponding
+IO-notebook for more information about the usage.</p></li>
+<li><p>The graph datastructure now supports <code class="code docutils literal notranslate"><span class="pre">EdgeAttributes</span></code>. These can be attached/removed/edited similarly to node attributes via Python and
+C++.</p></li>
+<li><p>Refactored <code class="code docutils literal notranslate"><span class="pre">Matrices</span></code> from the <code class="code docutils literal notranslate"><span class="pre">algebraic</span></code> module. This includes rewriting certain functions and adding new functionality. For
+<code class="code docutils literal notranslate"><span class="pre">CSRMatrix</span></code>: functions for iterating over all elements of the matrix, including zeros. For <code class="code docutils literal notranslate"><span class="pre">DenseMatrix</span></code>: functions to compute the
+adjacency, Laplacian, and incidence matrix of a graph and a diagonal matrix. For <code class="code docutils literal notranslate"><span class="pre">DynamcMatrix</span></code>: functions to iterate over the (non-zero)
+elements. In this way, all matrix classes offer the same set of APIs.</p></li>
+<li><p>A graph can now be constructed from several numpy/scipy data types, including <code class="code docutils literal notranslate"><span class="pre">scipy.sparse.coo_matrix</span></code>. The new function is available via
+<code class="code docutils literal notranslate"><span class="pre">nk.GraphFromCoo</span></code>. See the corresponding graph-notebook for more information about the usage.</p></li>
+<li><p>The new constructor uses <code class="code docutils literal notranslate"><span class="pre">graph.addEdges</span></code> underneath, which is also now available via the Python interface. Based on several numpy/scipy
+data sources, multiple edges can be added. This method has increased performance (5x-10x) with respect to manually creating the graph and adding edges in
+a loop.</p></li>
+<li><p>The <code class="code docutils literal notranslate"><span class="pre">plot</span></code> module in Python was completely rewritten, since most of its functionality was outdated. In addition a notebook is added,
+reflecting the changes.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">New algorithms (distance)</span>:</dt><dd><ul class="simple">
+<li><p>Dynamic 2-Hop Landmark Labeling based on <a class="reference external" href="https://dl.acm.org/doi/10.1145/3299901">https://dl.acm.org/doi/10.1145/3299901</a> . The current implementation is only partially dynamic, since
+only edge insertions are supported.</p></li>
+<li><p>Complex Paths algorithm based on <a class="reference external" href="https://www.nature.com/articles/s41467-021-24704-6">https://www.nature.com/articles/s41467-021-24704-6</a> and the original implementation from
+<a class="reference external" href="https://github.com/drguilbe/complexpaths.git">https://github.com/drguilbe/complexpaths.git</a> . The algorithm is part of the <code class="code docutils literal notranslate"><span class="pre">centrality</span></code> module and available in C++ and Python.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Further changes and improvements</span>:</dt><dd><ul class="simple">
+<li><p>Python 3.12 is now fully supported.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">compactEdges()</span></code> is now marked as deprecated, since there can not be any holes for missing edges in the data structure anymore. The
+underlying idea of keeping a consistent datastructure (maintaining ordering of edges / correct indexes of edge ids) after dynamic graph updates
+has been moved to new functions <code class="code docutils literal notranslate"><span class="pre">setKeepEdgesSorted()</span></code> and <code class="code docutils literal notranslate"><span class="pre">setMaintainCompactEdges()</span></code>. These functions set variables, which
+influence running time consuming sanity checks during <code class="code docutils literal notranslate"><span class="pre">removeEdge</span></code>. Per default the variables are set to <code class="code docutils literal notranslate"><span class="pre">false</span></code> and it is only
+needed to activate them for advanced use cases.</p></li>
+<li><p>Several deprecated functions are removed entirely or are now integrated in different modules with release 11.0. Some smaller or outdated helper
+modules like <code class="code docutils literal notranslate"><span class="pre">stopwatch</span></code> are also removed without replacements. This concerns mostly the Python interface.</p></li>
+<li><p>Supported compiler now include GCC 13 and Clang 17. Note that compiler older than five years are not officially supported anymore (no changes
+with respect to release 10.1 of NetworKit).</p></li>
+<li><p>The <code class="code docutils literal notranslate"><span class="pre">NetworKitBinary</span></code> writer now converts older binary formats (<code class="code docutils literal notranslate"><span class="pre">&lt;3</span></code>) automatically to the most recent version 3. With respect to
+previous versions, version 3 supports edge ids.</p></li>
+<li><p>The running time of <code class="code docutils literal notranslate"><span class="pre">HyperbolicGenerator</span></code> is improved slightly by using an algorithm, which generates sequences of sorted random numbers.</p></li>
+<li><p>Functions <code class="code docutils literal notranslate"><span class="pre">RandomEdgeScore::score</span></code>, <code class="code docutils literal notranslate"><span class="pre">RandomNodeEdgeScore::score</span></code> and <code class="code docutils literal notranslate"><span class="pre">Sfigality::maximum</span></code> are now implemented.</p></li>
+<li><p>A new notebook is added, describing the usage of dynamic algorithms in NetworKit. It is available via github and the documentation page.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Notable Bug-Fixes</span>:</dt><dd><ul class="simple">
+<li><p>Fixed a bug in <code class="code docutils literal notranslate"><span class="pre">DGSWriter</span></code>, where node restoration events were not correctly written to files.</p></li>
+<li><p>Fixed functions <code class="code docutils literal notranslate"><span class="pre">communicationGraph</span></code> and <code class="code docutils literal notranslate"><span class="pre">weightedDegreeWithCluster</span></code> from <code class="code docutils literal notranslate"><span class="pre">GraphClusteringTools</span></code> to return correct data types
+(directed/weighted).</p></li>
+<li><p>Subtraction of two <code class="code docutils literal notranslate"><span class="pre">DenseMatrix</span></code> now works correctly.</p></li>
+<li><p>Fixed the previously broken <code class="code docutils literal notranslate"><span class="pre">community.SpectralPartitioner</span></code>.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">community.kCoreCommunityDetection</span></code> gives now correct results.</p></li>
+<li><p>Fixed a heap corruption bug due to missing parameters in the Python interface of <code class="code docutils literal notranslate"><span class="pre">KadabraBetweenness</span></code>.</p></li>
+<li><p>Fixed a bug in <code class="code docutils literal notranslate"><span class="pre">BiconnectedComponents</span></code>, where the result of the algorithm was incorrect after a node got deleted from the graph data
+structure.</p></li>
+<li><p>Removed a race condition from <code class="code docutils literal notranslate"><span class="pre">Luby</span></code> algorithm, leading to erroneous results. As a result, the performance of the algorithm has decreased
+(2-3x loss of speedup).</p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="mar-23-2023-networkit-10-1-released">
+<h3>Mar 23, 2023: <strong>NetworKit 10.1 released</strong><a class="headerlink" href="#mar-23-2023-networkit-10-1-released" title="Permalink to this heading">¶</a></h3>
+<dl class="simple">
+<dt><span class="underline">New features</span>:</dt><dd><ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">TopCloseness</span></code> and <code class="code docutils literal notranslate"><span class="pre">TopHarmonicCloseness</span></code> now support restriction of the top-k calculation to certain nodes (while the truth is
+given by the complete graph). This can lead to significant speed-up in running time.</p></li>
+<li><p>It is now possible to let <code class="code docutils literal notranslate"><span class="pre">Graph.addEdge()</span></code> check for multi-edges when adding new edges. This is disabled by default, since it has an
+impact on the running time of <code class="code docutils literal notranslate"><span class="pre">addEdge()</span></code>. The return type changed to indicate whether the edge was added or not.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">Node2Vec</span></code> now also supports directed graphs. This was a contribution from Klaus Ahrens (&#64;fidus58).</p></li>
+<li><p>Edge weights in a graph can now be randomized by calling <code class="code docutils literal notranslate"><span class="pre">GraphTools::randomizeWeights()</span></code> (C++) or
+<code class="code docutils literal notranslate"><span class="pre">networkit.graphtools.randomizeWeights()</span></code>. The C++ API also supports adding a custom distribution.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">New algorithms (distance)</span>:</dt><dd><ul class="simple">
+<li><p>New algorithm: Pruned Landmark Labeling based on T. Akiba, Y. Iwata, Y. Yoshida, SIGMOD ‘13. The algorithm computes distance labels which are
+used to answer shortest-path distance queries.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Further changes and improvements</span>:</dt><dd><ul class="simple">
+<li><p>Python 3.11 is now fully supported. With release 10.1 onward, a wheel for Linux, macOS and Windows will be available via all distribution
+channels.</p></li>
+<li><p>Supported compiler now include GCC 12.0 and Clang 15.0. Note that compiler older than five years are not officially supported anymore. This now
+includes Clang <code class="code docutils literal notranslate"><span class="pre">&lt;6.0</span></code> and GCC <code class="code docutils literal notranslate"><span class="pre">&lt;8.1</span></code> (with the exception of <code class="code docutils literal notranslate"><span class="pre">7.4</span></code>).</p></li>
+<li><p>Calling names for enums in both Python and C++ is now unified. Before the change, different enums were written with different naming schemes
+(for example: ClosenessVariant::standard, ClosenessType::OUTBOUND). Also naming scheme between Python and C++ differed in various cases. The new
+convention is: <code class="code docutils literal notranslate"><span class="pre">CamelCase</span></code> for identifiers and <code class="code docutils literal notranslate"><span class="pre">SCREAMING_SNAKE_CASE</span></code> for members. For backwards compatibility all previous calling
+conventions still work (for two releases).</p></li>
+<li><p>In addition all enums in Python are now callable as member of their module. For example: <code class="code docutils literal notranslate"><span class="pre">networkit.centrality.ClosenessType.OUTBOUND</span></code>.</p></li>
+<li><p>Previously non-existing edge ids were returned as 0 which could be misleading. Now they return as <code class="code docutils literal notranslate"><span class="pre">none</span></code> to be clear that the edge id
+doesn’t exist. See <a class="reference external" href="https://github.com/networkit/networkit/issues/747">https://github.com/networkit/networkit/issues/747</a> for details.</p></li>
+<li><p>For <code class="code docutils literal notranslate"><span class="pre">SpanningEdgeCentrality</span></code>, it is now mandatory to index the edges before running the algorithm. See
+<a class="reference external" href="https://github.com/networkit/networkit/issues/967">https://github.com/networkit/networkit/issues/967</a> for details.</p></li>
+<li><p>Improved <code class="code docutils literal notranslate"><span class="pre">MatrixMarketReader</span></code> now supports <code class="code docutils literal notranslate"><span class="pre">%</span></code>-comments and warns for potential data loss for edge weights bigger than
+<code class="code docutils literal notranslate"><span class="pre">4.5*10^15</span></code>.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Notable Bug-Fixes</span>:</dt><dd><ul class="simple">
+<li><p>Fixed bug in <code class="code docutils literal notranslate"><span class="pre">ParallelConnectedComponents</span></code>, which lead to occasional segmentation faults in the member function <cite>getComponents()</cite>.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">Graph</span></code> constructor now supports creation of graphs with indexed edges by passing <code class="code docutils literal notranslate"><span class="pre">edgesIndexed=True</span></code>. Before the fix doing so led
+to segmentation faults.</p></li>
+<li><p>Fixed bug for source-target shortest path algorithms (<code class="code docutils literal notranslate"><span class="pre">MultiTargetBFS</span></code>, <code class="code docutils literal notranslate"><span class="pre">MultiTargetDijkstra</span></code>), which caused segmentation faults
+when passing unreachable targets.</p></li>
+<li><p>Fixed inconsistent weights for graphs created by <code class="code docutils literal notranslate"><span class="pre">GraphTools::toUndirected()</span></code>/<code class="code docutils literal notranslate"><span class="pre">graphtools.toUndirected()</span></code>. Error occured when
+converting bidirectional edges. Fixed behavior per default creates an undirected edge with the summed up weight of both edges.</p></li>
+<li><p>Fix a potential bug in PLP. A variable was updated non-atomically in a parallel loop, which can lead to a possible race condition.</p></li>
+<li><p>Fixed <code class="code docutils literal notranslate"><span class="pre">NetworkBinaryWriter</span></code> error, which led to erroneous graph files when writing graphs with deleted nodes (e.g. by calling
+<code class="code docutils literal notranslate"><span class="pre">G::removeNode(u)</span></code>).</p></li>
+<li><p>Fix EdmondsKarp <code class="code docutils literal notranslate"><span class="pre">getMaxFlow()</span></code> (for directed graphs) and <code class="code docutils literal notranslate"><span class="pre">getSourceSet()</span></code> (for directed/undirected graphs). This is a contribution
+from Jonas Charfreitag (&#64;CharJon).</p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="may-18-2022-networkit-10-0-released">
+<h3>May 18, 2022: <strong>NetworKit 10.0 released</strong><a class="headerlink" href="#may-18-2022-networkit-10-0-released" title="Permalink to this heading">¶</a></h3>
+<dl class="simple">
+<dt><span class="underline">New features</span>:</dt><dd><ul class="simple">
+<li><p>Native support for node attributes. In C++ the attributes can be of any type. Python does not support generic data types; thus, NetworKit node
+attributes in Python are restriced to type <code class="code docutils literal notranslate"><span class="pre">int</span></code>, <code class="code docutils literal notranslate"><span class="pre">float</span></code>, and <code class="code docutils literal notranslate"><span class="pre">str</span></code>, and may be subject to changes in the future. See
+<a class="reference external" href="https://networkit.github.io/dev-docs/python_api/graph.html#networkit.graph.Graph.attachNodeAttribute">https://networkit.github.io/dev-docs/python_api/graph.html#networkit.graph.Graph.attachNodeAttribute</a> for details. The attribute API is still
+considered experimental and may change in the future.</p></li>
+<li><p>New Python module <code class="code docutils literal notranslate"><span class="pre">vizbridges</span></code>: provides functions for 2D and 3D graph visualization (via Cytoscape/Plotly) within Jupyter Notebooks. See
+the documentation and our example notebooks for more details. Module <code class="code docutils literal notranslate"><span class="pre">csbridge</span></code> is deprecated in favor of vizbridges and respective
+functionality is moved there. An application built on top of vizbridges is described in “Interactive Visualization of Protein RINs using
+NetworKit in the Cloud” (E. Angriman, F. Brandt-Tumescheit, L. Franke, A. van der Grinten, H. Meyerhenke).</p></li>
+</ul>
+</dd>
+<dt><span class="underline">New algorithms (centrality)</span>:</dt><dd><ul class="simple">
+<li><p>New algorithm for computing the Local Clustering Coefficient based on squares. This is a contribution from Till Hoffmann (&#64;tillahoffmann) from
+Harvard T.H. Chan School of Public Health.</p></li>
+<li><p>New algorithm for Forest Closeness Centrality based on “New Approximation Algorithms for Forest Closeness Centrality - for Individual Vertices
+and Vertex Groups”, A. van der Grinten, E. Angriman, M. Predari, H. Meyerhenke, SDM21.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Further changes and improvements</span>:</dt><dd><ul class="simple">
+<li><p>C++ standard updated to version 17, oldest supported compilers are Clang 5.0, GCC 7 (and equivalent MSVC, AppleClang).</p></li>
+<li><p>APSP: support for graphs with non-existing nodes.</p></li>
+<li><p>SPSP: support for a list of target nodes; the algorithm stops once all target nodes have been visited.</p></li>
+<li><p>Distance module: all algorithms support returning distances as a numpy array (via <code class="code docutils literal notranslate"><span class="pre">getDistances()</span></code>), which is more efficient than
+returning Python lists. The new approach also enables straightforward consumption of centrality scores by numpy-compatible APIs and may be
+enabled by default in the future. This is a contribution from Till Hoffmann (&#64;tillahoffmann) from Harvard T.H. Chan School of Public Health.</p></li>
+<li><p>Dynamics module: possibility to compare graph events via binary operators, available both in C++ and Python.</p></li>
+<li><p>Generators module: removal of the quadratic version of the Barabasi Albert Generator. See <a class="reference external" href="https://github.com/networkit/networkit/issues/787">https://github.com/networkit/networkit/issues/787</a> for
+details.</p></li>
+<li><p>Graph class: the algorithm to compute Kruskal Minimum Spanning Forest now uses the SpanningForest algorithm for undirected graphs. This leads to
+a general performance improvement.</p></li>
+<li><p>Deprecation of several Python modules: <code class="code docutils literal notranslate"><span class="pre">csbridge</span></code>, <code class="code docutils literal notranslate"><span class="pre">exceptions</span></code>, <code class="code docutils literal notranslate"><span class="pre">GEXFIO</span></code>, <code class="code docutils literal notranslate"><span class="pre">GraphMLIO</span></code>, <code class="code docutils literal notranslate"><span class="pre">partitioning</span></code>,
+<code class="code docutils literal notranslate"><span class="pre">sampling</span></code>, <code class="code docutils literal notranslate"><span class="pre">stopwatch</span></code>, <code class="code docutils literal notranslate"><span class="pre">viztasks</span></code>, <code class="code docutils literal notranslate"><span class="pre">workflows</span></code>. Note that some functionalities are moved to other modules. See
+documentation of further details.</p></li>
+<li><p>Improvement of the Python documentation. Doc-strings now report input parameters, return values, and inheritance relationship.</p></li>
+<li><p>Python APIs for the Maxent-Stress layout algorithm now support 3D coordinates.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Notable Bug-Fixes</span>:</dt><dd><ul class="simple">
+<li><p>Fixed bug in the dynamic Dijkstra implementation (after an edge update, some distances were not updated correctly).</p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="march-14-2022-new-paper-using-networkit">
+<h3>March 14, 2022: <strong>New paper using NetworKit</strong><a class="headerlink" href="#march-14-2022-new-paper-using-networkit" title="Permalink to this heading">¶</a></h3>
+<p>The paper <a class="reference external" href="https://arxiv.org/abs/2203.01263">Interactive Visualization of Protein RINs using NetworKit in the Cloud</a> (authors: E. Angriman, F.
+Brandt-Tumescheit, L. Franke, A. van der Grinten and H. Meyerhenke) has been accepted for IPDPS workshop on Graphs, Architectures, Programming, and
+Learning (<a class="reference external" href="https://hpc.pnl.gov/grapl/">GrAPL 2022</a>). In the paper NetworKit is used for near realtime manipulation and visualization of protein
+networks. A basic version of the visualization tool using <a class="reference external" href="https://plotly.com">Plotly</a> for generating 2D and 3D visualizations of networks will be
+integrated in future releases.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="february-8-2022-networkit-day-2022-march-3rd">
+<h3>February 8, 2022: <strong>NetworKit Day 2022 - March 3rd</strong><a class="headerlink" href="#february-8-2022-networkit-day-2022-march-3rd" title="Permalink to this heading">¶</a></h3>
+<p>Dear (prospective and current) NetworKit users and developers,</p>
+<p>as already announced at a previous date - we are looking forward to a new NetworKit Day in 2022, taking place on March 3rd from 1 p.m. to 5 p.m. (CET)
+online via Zoom. Registration is mandatory, but free of charge. This event is - as the previous ones - about interacting with the community. We share
+our latest updates, give insights for new users and also offer two workshops: one for beginners and one for advanced users. If you want to attend one
+or more workshops, better be prepared with a notebook and a modern webbrowser (although it is only for convenience, not a requirement). We also intend
+to discuss future development directions and receive feedback on the current status of NetworKit. NetworKit Day will also feature one scientific talk
+by Rob Kooij from TU Delft (Netherlands) about “Robustness of Complex Networks”.</p>
+<p>The program of the event can be found on our NetworKit Day subpage.</p>
+<p><span class="underline">Link for registration:</span> <a class="reference external" href="https://www.eventbrite.de/e/networkit-day-2022-nd22-registration-261084148717">https://www.eventbrite.de/e/networkit-day-2022-nd22-registration-261084148717</a></p>
+<p>Looking forward to seeing you on March 3rd!</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="december-20-2021-save-the-date-networkit-day-2022">
+<h3>December 20, 2021: <strong>Save the Date: NetworKit Day 2022</strong><a class="headerlink" href="#december-20-2021-save-the-date-networkit-day-2022" title="Permalink to this heading">¶</a></h3>
+<p>We are happy to announce a new NetworKit Day. The event will take place on March, 3rd 2022 - starting at 1 p.m. and ending at 6 p.m CET. Details
+concerning the program schedule will be shared at a later date.</p>
+<p>Wish you all a good holiday season!</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="december-14-2021-networkit-9-1-1-released">
+<h3>December 14, 2021: <strong>NetworKit 9.1.1 released</strong><a class="headerlink" href="#december-14-2021-networkit-9-1-1-released" title="Permalink to this heading">¶</a></h3>
+<dl class="simple">
+<dt><span class="underline">New features</span></dt><dd><ul class="simple">
+<li><p>Wheels: NetworKit is now available as pre-built wheel-packages for nearly all supported platforms via pip. In case you prefer to build the C++
+core and extensions, use <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--no-binary</span> <span class="pre">networkit</span></code>.</p></li>
+<li><p>M1 macOS: support for install NetworKit as a native package via pip.</p></li>
+</ul>
+</dd>
+</dl>
+<p><span class="underline">New algorithms</span></p>
+<dl class="simple">
+<dt>Community:</dt><dd><ul class="simple">
+<li><p>New overlapping community detection algorithm LFM (Local Fitness Method), available in <code class="code docutils literal notranslate"><span class="pre">centrality.LFM</span></code>. This is contribution from J.
+Gelhausen (KIT Karlsruhe)</p></li>
+<li><p>New parallel version of Leiden-based community detection algorithm, available in <code class="code docutils literal notranslate"><span class="pre">community.ParallelLeiden</span></code>. This is a contribution from
+F. Nguyen (KIT Karlsruhe).</p></li>
+</ul>
+</dd>
+<dt>GraphTools:</dt><dd><ul class="simple">
+<li><p>New function topologicalSort: returns a list of nodes sorted by a valid topological ordering, available in <code class="code docutils literal notranslate"><span class="pre">graphtools.topologicalSort</span></code>.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Further changes and improvements</span></dt><dd><ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">NetworkBinaryReader/Writer</span></code>: support for reading/writing edge indices and pickling graphs.</p></li>
+<li><p>Improved performance for <code class="code docutils literal notranslate"><span class="pre">CSRMatrix</span></code> functions sort() and diagonal().</p></li>
+<li><p>Improved performance for Vector function <code class="code docutils literal notranslate"><span class="pre">mean()</span></code>.</p></li>
+<li><p>Improved performance for <code class="code docutils literal notranslate"><span class="pre">Graphbuilder</span></code> (only available in C++).</p></li>
+<li><p>Improvements to the documentation, available at <a class="reference external" href="https://networkit.github.io/dev-docs/index.html">https://networkit.github.io/dev-docs/index.html</a></p></li>
+<li><p>Support for clang-13.</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Notable Bug-Fixes</span></dt><dd><ul class="simple">
+<li><p>Fixed a rare bug in <code class="code docutils literal notranslate"><span class="pre">centrality.GroupClosenessLocalSearch</span></code>, which could lead to worse solutions.</p></li>
+<li><p>Fixed <code class="code docutils literal notranslate"><span class="pre">coloring.SpectralColoring()</span></code> by adjusting scipy-imports.</p></li>
+<li><p>Fixed a problem for the experimental Windows support, where the wrong Python-libs are linked when multiple Python-versions are installed.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="july-1-2021-networkit-9-0-released">
+<h3>July 1, 2021: <strong>NetworKit 9.0 released</strong><a class="headerlink" href="#july-1-2021-networkit-9-0-released" title="Permalink to this heading">¶</a></h3>
+<dl class="simple">
+<dt><span class="underline">New feature</span></dt><dd><ul class="simple">
+<li><p>Windows 7, 8.1 and 10: possibility to install NetworKit via pip. Currently we have no pre-built wheel-package available so you have to make sure
+that the MSVC-compiler (cl.exe) can be found when installing NetworKit via pip. A possible solution is to call “pip” from within “Native Tools
+Command Prompt” provided by Visual Studio. This feature will be further improved in the future.</p></li>
+</ul>
+</dd>
+</dl>
+<p><span class="underline">New algorithms</span></p>
+<dl class="simple">
+<dt>Centrality:</dt><dd><ul class="simple">
+<li><p>Greedy algorithm for group harmonic closeness based on “Group-Harmonic and Group-Closeness Maximization - Approximation and Engineering”, E.
+Angriman, R. Becker, G. D’Angelo, H. Gilbert, A. van der Grinten, H. Meyerhenke, ALENEX 2021. This algorithm is available in
+<code class="code docutils literal notranslate"><span class="pre">networkit.centrality.GroupHarmonicCloseness</span></code>.</p></li>
+<li><p>Local search approximation algorithm for group closeness based on the aforementioned ALENEX 2021 paper. This algorithm is available in
+<code class="code docutils literal notranslate"><span class="pre">networkit.centrality.GroupClosenessLocalSearch</span></code>.</p></li>
+<li><p>Heuristic algorithm for group closeness (LS-Restrict) based on “Local Search for Group Closeness Maximization on Big Graphs”, E.Angriman, A. van
+der Grinten, H. Meyerhenke, IEEE BigData 2019. This algorithm is available in <code class="code docutils literal notranslate"><span class="pre">networkit.centrality.GroupClosenessLocalSwaps</span></code>.</p></li>
+<li><p>New algorithm for Normalized PageRank based on “Comparing Apples and Oranges: Normalized PageRank for Evolving Graphs”, K. Berberich, S.
+Bedathur, G. Weikum, M. Vazirgiannis, WWW 2007. The algorithm is available in <code class="code docutils literal notranslate"><span class="pre">networkit.centrality.PageRank</span></code>.</p></li>
+</ul>
+</dd>
+<dt>Community Detection:</dt><dd><ul class="simple">
+<li><p>Based on Map Equation, available via <code class="code docutils literal notranslate"><span class="pre">networkit.community.LouvainMapEquation</span></code>. For further information about the algorithm, see “The map
+equation”, M. Rosvall, D. Axelsson, C. T. Bergstrom, EPJ ST 2009.</p></li>
+<li><p>Based on Overlapping Normalized Mutual Information, from the paper  “Normalized Mutual Information to Evaluate Overlapping”, A. McDaid, D.
+Greene, N. Hurley, Physics and Society 2011. This algorithm is available in <code class="code docutils literal notranslate"><span class="pre">networkit.community.OverlappingNMIDistance</span></code>.</p></li>
+</ul>
+</dd>
+<dt>Matching:</dt><dd><ul class="simple">
+<li><p>Suitor matcher, based on “New Effective Multithreaded Matching Algorithms”, F. Manne and M. Halappanavar, IPDPS 2014. This algorithm is
+available in <code class="code docutils literal notranslate"><span class="pre">networkit.matching.SuitorMatcher</span></code>.</p></li>
+</ul>
+</dd>
+<dt>GraphTools:</dt><dd><ul class="simple">
+<li><p>New function <code class="code docutils literal notranslate"><span class="pre">subgraphFromNodes</span></code>: returns an induced subgraph based on an input graph</p></li>
+<li><p>The previous <code class="code docutils literal notranslate"><span class="pre">subgraphFromNodes</span></code> has been renamed to <code class="code docutils literal notranslate"><span class="pre">subgraphAndNeighborsFromNodes</span></code> in order to better reflect its functionality</p></li>
+</ul>
+</dd>
+<dt><span class="underline">Further changes and improvements</span></dt><dd><ul class="simple">
+<li><p>Template implementation of CSRMatrix</p></li>
+<li><p>Clang-analyzer warnings are fixed and treated as errors</p></li>
+<li><p>Improved performance of graph writers</p></li>
+<li><p>Possibility to try-out NetworKit without installation: binder support + cloud instances</p></li>
+<li><p>Optimized memory usage in LAMG and ConjugateGradient</p></li>
+<li><p>Improved runtime of (parallel) coarsening implementation for clusterings</p></li>
+<li><p>Improved runtime of isProper() for matching</p></li>
+<li><p>Support for clang-12 and gcc-11 compilers</p></li>
+<li><p>AVX2 support for Windows</p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="february-23-2021-networkit-8-1-released">
+<h3>February 23, 2021: <strong>NetworKit 8.1 released</strong><a class="headerlink" href="#february-23-2021-networkit-8-1-released" title="Permalink to this heading">¶</a></h3>
+<p><span class="underline">New features</span></p>
+<ul class="simple">
+<li><p>New embedding module that implements the node2vec algorithm based on “node2vec: Scalable feature learning for networks” by Grover and Leskovec (KDD
+2016). The embedding module is available for both C++ and Python.</p></li>
+<li><p>New csbridge Python module that allows to draw colored graphs inline in a jupyter notebook via ipycytoscape.</p></li>
+<li><p>Better implementation of <code class="code docutils literal notranslate"><span class="pre">ClusterRandomGraphGenerator</span></code>: now it takes linear time and supports parallelism.</p></li>
+<li><p>Added support for Binder. Newer branches from NetworKit can now be accessed directly from Binder. Currently supported are master (newest stable) and
+8.1 (release version).</p></li>
+</ul>
+<p><span class="underline">For developers</span></p>
+<ul class="simple">
+<li><p>We raised the minimum required clang version from 3.8 to 3.9.</p></li>
+<li><p>It is now possible to create the Python package against an external pre-build tlx-library. To use it, add <code class="code docutils literal notranslate"><span class="pre">--external-tlx=&lt;TLX_PATH&gt;</span></code> to
+<code class="code docutils literal notranslate"><span class="pre">setup.py</span> <span class="pre">build_ext-phase</span></code>.</p></li>
+<li><p>All clang-tidy warnings have been resolved and will be treated as errors by our CI pipeline. Some of the clang-tidy checks also involve possible
+performance enhancements and/or lowering of the memory footprint by avoiding unnecessary copies. The exact benefit depends on the use-case.</p></li>
+<li><p>Several warning and documentation fixes.</p></li>
+</ul>
+<p><span class="underline">Notable bugfixes</span></p>
+<ul class="simple">
+<li><p>When using custom compilers on macOS (for example homebrew gcc compiler) and NetworKit was built from source with an external core, this created a
+NetworKit installation with incompatible core and cython-extension libraries.</p></li>
+<li><p>In <code class="code docutils literal notranslate"><span class="pre">KatzCentrality</span></code>, the parameter alpha was set to 0 by default. This caused the edges to be ignored and every node got the same centrality.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="january-15-2021-new-paper-using-networkit">
+<h3>January 15, 2021: <strong>New paper using NetworKit</strong><a class="headerlink" href="#january-15-2021-new-paper-using-networkit" title="Permalink to this heading">¶</a></h3>
+<p>The paper “New Approximation Algorithms for Forest Closeness Centrality - for Individual Vertices and Vertex Groups” (authors: van der Grinten,
+Angriman, Predari, Meyerhenke) was selected for publication by <a class="reference external" href="https://www.siam.org/conferences/cm/conference/sdm21">SIAM Data Mining 2021</a>. In the
+paper NetworKit is used for computing the experimental data. We also plan to include the new Forest Closeness Centrality algorithms in future
+releases.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="december-18-2020-networkit-8-0-released">
+<h3>December 18, 2020: <strong>NetworKit 8.0 released</strong><a class="headerlink" href="#december-18-2020-networkit-8-0-released" title="Permalink to this heading">¶</a></h3>
+<p><span class="underline">New features</span></p>
+<ul class="simple">
+<li><p>Possibility to specify edge directions for Katz centrality</p></li>
+<li><p>New algorithm to approximate Electrical Closeness, based on <a class="reference external" href="https://drops.dagstuhl.de/opus/volltexte/2020/12872/pdf/LIPIcs-ESA-2020-6.pdf">Approximation of the Diagonal of a Laplacian’s Pseudoinverse for Complex Network
+Analysis</a> by E. Angriman, A. van der Grinten, M. Predari and H.
+Meyerhenke</p></li>
+<li><p>New algorithm: SPSP (Some Pairs Shortest Paths), as APSP but with user-specified source vertices</p></li>
+</ul>
+<p><span class="underline">New features for Contributors / Developers</span></p>
+<ul class="simple">
+<li><p>We moved our continious integration testing from Travis-CI to Github Actions. While the test-coverage stays the same, testing time is significantly
+reduced. This results in faster feedback for your pull requests.</p></li>
+<li><p>Based on our rule to support compilers which are 5 years old, the minimum support for gcc was raised to version 5.</p></li>
+<li><p>NetworKit now support C++14 features.</p></li>
+</ul>
+<p><span class="underline">Further Improvements</span></p>
+<ul class="simple">
+<li><p>The documentation is improved and includes rendering-fixes, when dealing with certain elements like formulas.</p></li>
+<li><p>Refactored <code class="code docutils literal notranslate"><span class="pre">Betweenness</span></code> and <code class="code docutils literal notranslate"><span class="pre">ApproxBetweenness</span></code>, leading to improved parallel performance.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="september-08-2020-networkit-7-1-released">
+<h3>September 08, 2020: <strong>NetworKit 7.1 released</strong><a class="headerlink" href="#september-08-2020-networkit-7-1-released" title="Permalink to this heading">¶</a></h3>
+<p><span class="underline">New features for Contributors / Developers</span></p>
+<ul class="simple">
+<li><p>We restructured the Cython-Interface (responsible for the connection between Python and C++ core-libraries) in order to make development and
+maintenance more approachable. As a result the previous monolithic file <code class="code docutils literal notranslate"><span class="pre">_NetworKit.pyx</span></code> is now split into modules, resembling the structure
+of the C++ code. New modules can be added easily by providing appropriate Cython-files in sub-folder <a class="reference external" href="https://github.com/networkit/networkit/tree/master/networkit">networkit</a>.</p></li>
+</ul>
+<p><span class="underline">Further Improvements</span></p>
+<ul class="simple">
+<li><p>Refactored the <cite>EdgeListReader</cite>, leading to a speed-up when reading in edge-list based graph files.</p></li>
+</ul>
+<p><span class="underline">Additional Notes</span></p>
+<ul class="simple">
+<li><p>Beginning with release <code class="code docutils literal notranslate"><span class="pre">7.1</span></code> (<code class="code docutils literal notranslate"><span class="pre">7.0</span></code> also available) NetworKit is now also distributed via package managers conda, spack and brew. All
+channels provide different packages for the C++ headers/library and the complete Python/C++ software. Head over to <a class="reference external" href="https://github.com/networkit/networkit">github</a> for installation instructions.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="may-29-2020-networkit-7-0-released">
+<h3>May 29, 2020: <strong>NetworKit 7.0 released</strong><a class="headerlink" href="#may-29-2020-networkit-7-0-released" title="Permalink to this heading">¶</a></h3>
+<p><span class="underline">New Features</span></p>
+<ul class="simple">
+<li><p>New algorithms for GedWalk centrality based on the paper <a class="reference external" href="https://arxiv.org/abs/1910.13874">Group Centrality Maximization for Large-scale Graphs</a>
+(ALENEX 2020).</p></li>
+<li><p>New parallel implementation of the <a class="reference external" href="https://www.ijcai.org/Proceedings/16/Papers/525.pdf">Hayashi et al. algorithm</a> for spanning edge centrality
+approximation.</p></li>
+<li><p>PageRank: possibility to choose between the L1 and the L2 norms as stopping criterion of the algorithm, and to set a maximum number of iterations.</p></li>
+<li><p>GlobalThresholdFilter: support for weighted and directed graphs.</p></li>
+</ul>
+<p><span class="underline">Notable Bugfixes</span></p>
+<ul class="simple">
+<li><p>CommuteTimeDistance now returns the correct distance between two nodes for computation with and without preprocessing</p></li>
+<li><p>Fix of an error in the <code class="code docutils literal notranslate"><span class="pre">exportGraph</span></code>-function of GephiStreaming</p></li>
+<li><p>Fix of an error in APSP that returned wrong distances in disconnected graphs</p></li>
+</ul>
+<p><span class="underline">Further Improvements</span></p>
+<ul class="simple">
+<li><p>Support for newer Python-version: 3.8</p></li>
+<li><p>Support for newer compiler: gcc 10.1, AppleClang 11.03</p></li>
+<li><p>Reduce memory footprint of several functions/classes: BFS, Dijkstra, SSSP, TopCloseness</p></li>
+<li><p>Reduce time-complexity of several functions/classes: GephiStreamer, StaticDegreeSequenceGenerator, TopCloseness, WattsStrogatzGenerator</p></li>
+<li><p>Added more notebook as examples</p></li>
+</ul>
+<p><span class="underline">Additional Notes for Contributors Developers</span></p>
+<ul class="simple">
+<li><p>Development will be done on the master branch, the Dev branch will not be used anymore.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="march-2020-new-accepted-papers-using-networkit">
+<h3>March 2020: <strong>new accepted papers using NetworKit</strong><a class="headerlink" href="#march-2020-new-accepted-papers-using-networkit" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>“Scaling up Network Centrality Computations - a Brief Overview” was accepted for publishing in the journal <a class="reference external" href="https://www.degruyter.com/view/journals/itit/62/1/itit.62.issue-1.xml">it - Information Technology</a>.</p></li>
+<li><p>“Scaling Betweenness Approximation to Billions of Edges by MPI-based Adaptive Sampling” accepted for <a class="reference external" href="http://www.ipdps.org">IPDPS 2020</a>.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="march-1-2020-networkit-6-1-0-released">
+<h3>March 1, 2020: <strong>NetworKit 6.1.0 released</strong><a class="headerlink" href="#march-1-2020-networkit-6-1-0-released" title="Permalink to this heading">¶</a></h3>
+<p>In the following you see an overview about the contributions, which went into NetworKit 6.1.0. Note that this version is fully compatible with release
+6.0.0.</p>
+<p><span class="underline">New features</span></p>
+<ul class="simple">
+<li><p>Introducing new iterators for nodes and edges to have a coherent, idiomatic and fast way to repeate tasks for different elements of a graph.
+Syntax-wise the iterators can be called similarly in Python and C++. In Python iterating can be invoked by <code class="code docutils literal notranslate"><span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">graph.iterNodes()</span></code>,
+whereas the counter-part for C++ works with <code class="code docutils literal notranslate"><span class="pre">for(node</span> <span class="pre">x:</span> <span class="pre">graph.nodeRange())</span></code>. Internally, all functions in NetworKit already use the new
+iterators.</p></li>
+<li><p>cmake adds more options to support variants of clang-compilers with OpenMP for macOS and Linux. This includes conda, homebrew and
+MacPort-environments.</p></li>
+</ul>
+<p><span class="underline">Bugfixes</span></p>
+<ul class="simple">
+<li><p>Generating a graph with the Watts-Strogatz algorithm does not lead anymore to infinite loops, when passing a number of neighbors per node, which is
+equal to the total number of nodes in the graph. (See issue <a class="reference external" href="https://github.com/networkit/networkit/issues/505">#505</a>)</p></li>
+<li><p>Fixed error in function inNeighbors, including not all parameters in call to underlying library. (See issue <a class="reference external" href="https://github.com/networkit/networkit/issues/469">#469</a>)</p></li>
+<li><p>The z-coordinate is now correctly scaled when writing a graph to GML. (See issue <a class="reference external" href="https://github.com/networkit/networkit/issues/500">#500</a>)</p></li>
+<li><p>ConnectedComponents::extractLargestConnectedComponent now returns a compacted graph if called with appropriate parameters.</p></li>
+</ul>
+<p><span class="underline">Deprecated features</span></p>
+<ul class="simple">
+<li><p>Nested-parallelism-feature is now marked as deprecated.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="february-24-2020-networkit-6-0-1-released">
+<h3>February 24, 2020: <strong>NetworKit 6.0.1 released</strong><a class="headerlink" href="#february-24-2020-networkit-6-0-1-released" title="Permalink to this heading">¶</a></h3>
+<p><span class="underline">Patch notes</span></p>
+<ul class="simple">
+<li><p>Added an option to cmake (-DNETWORKIT_EXT_TLX), which enables to link against an externally built tlx-library</p></li>
+<li><p>Updated travis-configuration in order to remove deprecated options</p></li>
+<li><p>Fixed a <a class="reference external" href="https://github.com/networkit/networkit/issues/491">bug</a>, which prevented the headers from ttmath to be installed correctly</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="november-29-2019-networkit-6-0-released">
+<h3>November 29, 2019: <strong>NetworKit 6.0 released</strong><a class="headerlink" href="#november-29-2019-networkit-6-0-released" title="Permalink to this heading">¶</a></h3>
+<p><span class="underline">New features</span></p>
+<ul class="simple">
+<li><p>NetworKit binary graphs: new binary graph format that is both smaller usually smaller than text-based formats and also faster to read. The format
+allows for parallel reading. It supports (un-)directed as well as (un-)weighted graphs and deleted nodes.</p></li>
+<li><p>KadabraBetweenness: implementation of a new parallel algorithm for betweenness approximation. This is based on the definition from “Parallel
+Adaptive Sampling with almost no Synchronization”, A. van der Grinten, E. Angriman, H. Meyerhenke</p></li>
+<li><p>New method in ConnetedComponents to extract the largest connected component of a given graph.</p></li>
+<li><p>BidirectionalBFS and BidirectionalDijkstra: new algorithms for faster graph exploration when the target vertex is known.</p></li>
+<li><p>New method in Graph to remove all duplicate edges (i.e. additional edges with same source and same target as another edge).</p></li>
+<li><p>New notebooks with tutorials for Centrality, Community detection, Components, Distance, Generators, Graph, Graph read/write, Randomization.</p></li>
+<li><p>Removal of deprecated features (see list below for more informations)</p></li>
+<li><p>New release cycle and version numbering: NetworKit now releases a major release every half a year, and an optional minor release every quarter. See
+you in summer 2020 for NetworKit 7.0 then.</p></li>
+<li><p>Package Manager support: conda, spack, brew and more packages will be created starting with 6.0. They will follow the github/PyPI-release in the
+coming weeks.</p></li>
+</ul>
+<p><span class="underline">New features for developers</span></p>
+<ul class="simple">
+<li><p>Clang format: new .clang-format configuration file to format NetworKit C++ files.</p></li>
+<li><p>Header files: all C++ header files have been moved to the include/ directory.</p></li>
+</ul>
+<p><span class="underline">Notable bugfixes</span></p>
+<ul class="simple">
+<li><p>“make install” and “ninja install” now correctly install the NetworKIt C++ library together with its header files. The pkg-config utility is
+supported to link against the library.</p></li>
+<li><p>NetworKit now always logs to stderr instead of stdout (regardless of the log level). This change makes life easier for programs that link against
+NetworKit as a library but also need to adhere to a specific output format on stdout.</p></li>
+<li><p>ApproxGroupBetweenness now uses much less memory and can scale to larger graphs.</p></li>
+</ul>
+<p><span class="underline">Deprecated features</span></p>
+<ul class="simple">
+<li><p>The following Graph methods have been deprecated: getId, typ, setName, getName, toString, nodes, edges, neighbors, time, timeStep.</p></li>
+<li><p>The following Graph methods have been deprecated and moved to GraphTools: copyNodes, subgraphFromNodes, transpose, BFSfrom, DFSfrom. toUnweighted,
+toUndirected, append, merge, volume</p></li>
+<li><p>A deprecated constructor of the KONECTGraphReader class has been removed.</p></li>
+<li><p>The deprecated FrutchermanReingold, and MultilevelLayouter algorithms have been removed.</p></li>
+<li><p>The deprecated MaxClique algorithm has been removed.</p></li>
+<li><p>The deprecated SSSP::getStack() method has been removed.</p></li>
+<li><p>The following deprecated methods in Graph have been removed: addNode(float, float), setCoordinate, getCoordinate, minCoordinate, maxCoordinate,
+initCoordinate</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="november-2019-new-accepted-papers-using-networkit">
+<h3>November 2019: new accepted papers using NetworKit<a class="headerlink" href="#november-2019-new-accepted-papers-using-networkit" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>“Local Search for Group Closeness Maximization on Big Graphs”, accepted for <a class="reference external" href="http://bigdataieee.org/BigData2019/">IEEE BigData 2019</a>.</p></li>
+<li><p>“Group Centrality Maximization for Large-scale Graphs” accepted for <a class="reference external" href="https://www.siam.org/conferences/cm/conference/alenex20">ALENEX 2020</a>.</p></li>
+<li><p>“Guidelines for Experimental Algorithmics: A Case Study in Network Analysis” was accepted and published by the open-access journal <em>Algorithms</em>. It
+is part of the Special Issue: “Algorithm Engineering: Towards Practically Efficient Solutions to Combinatorial” edited by Daniele Frigioni and
+Mattia D’Emidio. More information can be found here: <a class="reference external" href="https://www.mdpi.com/1999-4893/12/7/127">https://www.mdpi.com/1999-4893/12/7/127</a>.</p></li>
+<li><p>“Parallel Adaptive Sampling with almost no Synchronization” accepted for <a class="reference external" href="https://2019.euro-par.org/">Euro-Par 2019</a>.</p></li>
+<li><p>“Scalable Katz Ranking Computation in Large Static and Dynamic Graphs” accepted for <a class="reference external" href="http://algo2018.hiit.fi/esa/">Esa 2018</a>.</p></li>
+<li><p>“Parallel and I/O-efficient Randomisation of Massive Networks using Global Curveball Trades” accepted for <a class="reference external" href="http://algo2018.hiit.fi/esa/">Esa 2018</a>.</p></li>
+<li><p>“The Polynomial Volume Law of Complex Networks in the Context of Local and Global Optimization” in <a class="reference external" href="https://www.nature.com/articles/s41598-018-29131-0">Scientific Reports</a>.</p></li>
+<li><p>“Computing Top-k Closeness Centrality in Fully-dynamic Graphs” accepted for <a class="reference external" href="https://archive.siam.org/meetings/alenex18/">ALENEX 2018</a>.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="december-19-2018-networkit-5-0-released">
+<h3>December 19, 2018: <strong>NetworKit 5.0 released</strong><a class="headerlink" href="#december-19-2018-networkit-5-0-released" title="Permalink to this heading">¶</a></h3>
+<p>Major features:</p>
+<ul class="simple">
+<li><p>New algorithm for approximating of the betweenness centrality of all the nodes of a graph or of the top-k nodes with highest betweenness centrality
+based on: “KADABRA is an ADaptive Algorithm for Betweenness via Random Approximation”, M. Borassi, E. Natale. Presented at ESA 2016.</p></li>
+<li><p>New Mocnik graph generator based on: “Modelling Spatial Structures”, F.B. Mocnik, A. Frank. Presented at COSIT 2015.</p></li>
+<li><p>New build system based on CMake.</p></li>
+<li><p>Support for C++ build on Windows.</p></li>
+</ul>
+<p>Minor changes:</p>
+<ul class="simple">
+<li><p>Parallel Erdos Reny graph generator.</p></li>
+<li><p>NetworKit installation via pip: missing packages will be automatically downloaded.</p></li>
+<li><p>Partition: equality between partitions can be quickly checked via hashing.</p></li>
+<li><p>Closeness: generalized definition of Closeness centrality so it can be computed also on disconnected graphs.</p></li>
+<li><p>Aux::PrioQueue allows read access to its elements via iterators.</p></li>
+<li><p>Graph class: new reductions allow to compute the maximum (weighted) degree of a graph in parallel.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="june-25-2018-networkit-4-6-released">
+<h3>June 25, 2018: <strong>NetworKit 4.6 released</strong><a class="headerlink" href="#june-25-2018-networkit-4-6-released" title="Permalink to this heading">¶</a></h3>
+<p>Today we announce the next version of NetworKit, the open-source toolkit for large-scale network analysis. NetworKit is a Python package, with
+performance-critical algorithms implemented in C++/OpenMP.</p>
+<p><strong>Release notes</strong></p>
+<p>Major features:</p>
+<ul class="simple">
+<li><p>Dynamic algorithm for keeping track of k nodes with highest closeness centrality (based on “Computing Top-k Closeness Centrality in Fully-dynamic
+Graphs”, P. Bisenius, E. Bergamini, E. Angriman and H. Meyerhenke. Presented at ALENEX 2018).</p></li>
+<li><p>Dynamic algorithm to keep track of k nodes with highest Katz centrality (based on “Scalable Katz Ranking Computation in Large Static and Dynamic
+Graphs”, A. van der Grinten, E. Bergamini, O. Green, D. A. Bader and H. Meyerhenke.).</p></li>
+<li><p>Curveball graph randomization algorithm based on “Parallel and I/O-efficient Randomisation of Massive Networks using Global Curveball Trades”, C. J.
+Carstens, M. Hamann, U. Meyer, M. Penschuck, H. Tran and D. Wagner.</p></li>
+<li><p>Algorithm for finding the group of nodes with highest betweenness centrality (based  on “Scalable Betweenness Centrality Maximization via Sampling”,
+A. Mahmoody, C. E. Tsourakakis, E. Upfal).</p></li>
+<li><p>Algorithm for finding the group of nodes with highest group degree based on the definition in “The Centrality of Groups and Classes”, M.G. Everett,
+S.P. Borgatti.</p></li>
+<li><p>Algorithm for finding all the biconnected components of a graph based on “Algorithm 447: efficient algorithms for graph manipulation”, J. Hopcroft,
+R. Tarjan.</p></li>
+<li><p>Support for binary graph I/O: Support for graphs exported by Thrill (see <a class="reference external" href="https://github.com/thrill/thrill">https://github.com/thrill/thrill</a>), and Implementation of binary partition
+readers and writers that are potentially faster than their text-based counterparts.</p></li>
+</ul>
+<p>Minor changes:</p>
+<ul class="simple">
+<li><p>All algorithms for finding the top-k (harmonic) closeness can also return all the nodes whose centrality is equal to the k-th highest. This
+behaviour can be triggered by parameter passed in the constructor of the class.</p></li>
+<li><p>Faster KONECT and SNAP graph readers: roughly 2x speedup on the previous readers.</p></li>
+<li><p>Greatly improved running time of NetworKit’s unit tests.</p></li>
+<li><p>Size reduction of the “input” folder. In case of space constraints, we suggest to do a shallow clone of the NetworKit repository: git clone
+–depth=1 <a class="reference external" href="http://github.com/networkit/networkit">http://github.com/networkit/networkit</a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="december-14-2017-networkit-4-5-released">
+<h3>December 14, 2017: <strong>NetworKit 4.5 released</strong><a class="headerlink" href="#december-14-2017-networkit-4-5-released" title="Permalink to this heading">¶</a></h3>
+<p>Today we announce the next version of NetworKit, the open-source toolkit for large-scale network analysis. NetworKit is a Python package, with
+performance-critical algorithms implemented in C++/OpenMP.</p>
+<p><strong>Release notes</strong></p>
+<p>Major:</p>
+<ul class="simple">
+<li><p>Algorithm for finding the group of nodes with highest closeness centrality (based on “Scaling up Group Closeness Maximization”, E. Bergamini, T.
+Gonser and H. Meyerhenke. To appear at ALENEX 2018).</p></li>
+<li><p>Dynamic algorithm for updating the betweenness of a single node faster than updating it for all nodes (based on “Improving the betweenness
+centrality of a node by adding links”, E. Bergamini, P. Crescenzi, G. D’Angelo, H. Meyerhenke, L. Severini and Y. Velaj. Accepted by JEA).</p></li>
+<li><p>Dynamic algorithm for keeping track of k nodes with highest closeness centrality (based on “Computing Top-k Closeness Centrality in Fully-dynamic
+Graphs”, P. Bisenius, E. Bergamini, E. Angriman and H. Meyerhenke. To appear at ALENEX 2018).</p></li>
+</ul>
+<p>Minor:</p>
+<ul class="simple">
+<li><p>Dynamic algorithm for updating the weakly connected components of a directed graph after edge additions or removals.</p></li>
+<li><p>Official support for Windows 10. Take a look at the <a class="reference external" href="https://networkit.github.io/get_started.html">Get Started guide</a> for further instructions.</p></li>
+<li><p>Support for SCons3. There are no more dependencies on Python 2 if you decide to use SCons3 with Python 3.</p></li>
+<li><p>Improved include of external libraries. These can now simply be specified in the build.conf file. See <a class="reference external" href="https://github.com/networkit/networkit/pull/58">Pull Request #58</a> for further details.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="september-06-2017-networkit-4-4-released">
+<h3>September 06, 2017: <strong>NetworKit 4.4 released</strong><a class="headerlink" href="#september-06-2017-networkit-4-4-released" title="Permalink to this heading">¶</a></h3>
+<p>Today we announce the next version of NetworKit, the open-source toolkit for large-scale network analysis. NetworKit is a Python package, with
+performance-critical algorithms implemented in C++/OpenMP.</p>
+<p><strong>Release notes</strong></p>
+<p>Major:</p>
+<ul class="simple">
+<li><p>Weakly connected components (components.WeaklyConnectedComponents)</p></li>
+<li><p>Dynamic algorithm for updating connected components in undirected graphs (components.DynConnectedComponents)</p></li>
+<li><p>Algorithm for computing the weakly connected components in directed graphs (components.WeaklyConnectedComponents)</p></li>
+<li><p>Enumeration of all simple paths between two nodes, up to a user-specified threshold (distance.AllSimplePaths)</p></li>
+</ul>
+<p>Minor:</p>
+<ul class="simple">
+<li><p>Improved documentation</p></li>
+<li><p>Marked SSSP::getStack() as deprecated and replaced with SSSP::getNodesSortedByDistance()</p></li>
+<li><p>Several fixes in the LFR generator</p></li>
+<li><p>Added a wrapper class for the BTER implementation FEASTPACK</p></li>
+<li><p>Expose restoreNode method to Python</p></li>
+<li><p>Added shared library option to SCons</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="july-19-2017-networkit-day-on-september-12-2017">
+<h3>July 19, 2017: <strong>NetworKit Day</strong> on September 12, 2017<a class="headerlink" href="#july-19-2017-networkit-day-on-september-12-2017" title="Permalink to this heading">¶</a></h3>
+<p>The first NetworKit Day will be held on September 12, 2017 at the Karlsruhe Institute of Technology, Karlsruhe, Germany. For further information,
+visit the webpage <a class="reference external" href="https://networkit.github.io/networkit-day.html">https://networkit.github.io/networkit-day.html</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="june-07-2017-networkit-4-3-released">
+<h3>June 07, 2017: <strong>NetworKit 4.3 released</strong><a class="headerlink" href="#june-07-2017-networkit-4-3-released" title="Permalink to this heading">¶</a></h3>
+<p>Today we announce the next version of NetworKit, the open-source toolkit for large-scale network analysis. NetworKit is a Python package, with
+performance-critical algorithms implemented in C++/OpenMP.</p>
+<p><strong>Release notes</strong></p>
+<p>Major:</p>
+<ul class="simple">
+<li><p>New dynamic algorithm for updating exact betweenness centrality after an edge insertion, based on “Faster Betweenness Centrality Updates in Evolving
+Networks”, Bergamini et al., to appear at SEA 2017 (<a class="reference external" href="https://arxiv.org/abs/1704.08592">https://arxiv.org/abs/1704.08592</a>)</p></li>
+<li><p>New dynamic algorithm for updating APSP after an edge insertion (this is basically the first step of the dynamic betweenness algorithm, with the
+difference that only distances are updated, and not the number of shortest paths)</p></li>
+<li><p>New faster algorithm for listing all maximal cliques, based on “Listing All Maximal Cliques in Large Sparse Real-World Graphs”, Eppstein and Strash,
+SEA 2011 (<a class="reference external" href="https://link.springer.com/chapter/10.1007/978-3-642-20662-7_31">https://link.springer.com/chapter/10.1007/978-3-642-20662-7_31</a>)</p></li>
+</ul>
+<p>Minor:</p>
+<ul class="simple">
+<li><p>New base class DynAlgorithm with a common interface for all dynamic algorithms.</p></li>
+<li><p>Jupyter Notebook explaining how to use dynamic algorithms in NetworKit.</p></li>
+<li><p>Renamed ApproxBetweenness2 to EstimateBetweenness.</p></li>
+<li><p>Moved SSSP, DynSSSP and subclasses to distance module.</p></li>
+<li><p>Refactored PrioQueue and PrioQueueForInts to have a common interface.</p></li>
+<li><p>Made deletion of incident edges automatic when deleting a node.</p></li>
+<li><p>Fixed minor issues and improved documentation of several classes.</p></li>
+<li><p>Exported Graph::randomEdge(s) to Python.</p></li>
+<li><p>Marked IndependentSetFinder, FruchtermanReingold, Layouter, MultilevelLayouter, RandomSpanningTree, PseudoRandomSpanningTree and MaxClique as
+deprecated.</p></li>
+</ul>
+<p>NOTE: The classes marked as deprecated will be permanently deleted with the next release. Please contact us if there are reasons why some of the
+classes should be kept.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="march-29-2017-publication-accepted-at-sea-2017">
+<h3>March 29, 2017: <strong>Publication accepted at SEA 2017</strong><a class="headerlink" href="#march-29-2017-publication-accepted-at-sea-2017" title="Permalink to this heading">¶</a></h3>
+<p>Our paper on computing betweenness centrality in dynamic networks using NetworKit (authors: Bergamini, Meyerhenke, Ortmann, Slobbe) has been accepted
+for publication at the 16th International Symposium on Experimental Algorithms (SEA17).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="february-25-2017-migration-to-github">
+<h3>February 25, 2017: <strong>Migration to GitHub</strong><a class="headerlink" href="#february-25-2017-migration-to-github" title="Permalink to this heading">¶</a></h3>
+<p>The NetworKit team is happy to announce that the NetworKit project has been successfully migrated to GitHub. Please join us on</p>
+<p><a class="reference external" href="https://github.com/networkit/networkit">https://github.com/networkit/networkit</a></p>
+<p>We believe the migration will make it easier for developers to contribute to the project and we hope to bring the advantages of efficient large-scale
+network analysis to even more people.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="december-13-2016-networkit-4-2-released">
+<h3>December 13, 2016: <strong>NetworKit 4.2 released</strong><a class="headerlink" href="#december-13-2016-networkit-4-2-released" title="Permalink to this heading">¶</a></h3>
+<p>Today we announce the next version of NetworKit, the open-source toolkit for large-scale network analysis. NetworKit is a Python package, with
+performance-critical algorithms implemented in C++/OpenMP.</p>
+<p><strong>Release notes</strong></p>
+<p>Major:</p>
+<ul class="simple">
+<li><p>New graph drawing algorithm for the Maxent-stress model; the algorithm can layout even large graphs quickly. It follows the paper by Gansner et al.
+with some modifications; the biggest deviation is the use of the LAMG solver for the Laplacian linear systems</p></li>
+<li><p>Parallel implementation for the approximation of the neighborhood function; class has been refactored from ApproxNeighborhoodFunction to
+NeighborhoodFunctionApproximation.</p></li>
+<li><p>New heuristic algorithm for the neighborhood function. It is based on sampling and the breadth-first search and offers more flexibility with regards
+to the tradeoff between running time and accuracy as the number of samples can be specified by the user. It is also much faster than the
+approximation algorithm for networks with a high diameter (e.g. road networks).</p></li>
+</ul>
+<p>Minor:</p>
+<ul class="simple">
+<li><p>Iterative implementation of components.StronglyConnectedComponents, which is now the new default. For graphs where edges have been deleted, it is
+recommended to use the recursive implementation, which is still available.</p></li>
+<li><p>Removed heuristic for vertex diameter estimation from centrality.ApproxBetweenness (now the vertex diameter is estimated as suggested in Riondato,
+Kornaropoulos: Fast approximation of betweenness centrality through sampling)</p></li>
+<li><p>Refactoring of the approximation algorithms in the distance group. ApproxNAME -&gt; NAMEApproximation.</p></li>
+<li><p>Simplified installation procedure: Install required dependencies automatically</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="july-06-2016-publication-accepted-at-csc-2016">
+<h3>July 06, 2016: <strong>Publication accepted at CSC 2016</strong><a class="headerlink" href="#july-06-2016-publication-accepted-at-csc-2016" title="Permalink to this heading">¶</a></h3>
+<p>Our paper on approximating current-flow closeness centrality using NetworKit (authors: Bergamini, Wegner, Lukarski, Meyerhenke) has been accepted for
+publication at the 7th SIAM Workshop on Combinatorial Scientific Computing (CSC16). <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="july-05-2016-networkit-4-1-1-released">
+<h3>July 05, 2016: <strong>NetworKit 4.1.1 released</strong><a class="headerlink" href="#july-05-2016-networkit-4-1-1-released" title="Permalink to this heading">¶</a></h3>
+<p>This is a more of a maintenance release, that fixes the pip package and building with clang is possible again (at least with version 3.8).</p>
+<p>Note: You can control which C++ compiler the setup.py of the networkit package is supposed to use with e.g. <code class="code docutils literal notranslate"><span class="pre">CXX=clang++</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">networkit</span></code>.
+This may be helpful when the setup fails to detect the compiler.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="june-23-2016-networkit-4-1-released">
+<h3>June 23, 2016: <strong>NetworKit 4.1 released</strong><a class="headerlink" href="#june-23-2016-networkit-4-1-released" title="Permalink to this heading">¶</a></h3>
+<p>Today we announce the next version of NetworKit, the open-source toolkit for large-scale network analysis. NetworKit is a Python package, with
+performance-critical algorithms implemented in C++/OpenMP.</p>
+<p><strong>Release notes</strong></p>
+<p>Major:</p>
+<p>new website</p>
+<p>C++ implementation of Lean Algebraic Multigrid (LAMG) by Livne et al. for solving large Laplacian systems serves as backend for various network
+analysis kernels</p>
+<p>centrality module</p>
+<ul class="simple">
+<li><p>centrality.TopCloseness: Implementation of a new algorithm for finding the top-k nodes with highest closeness centrality faster than computing it
+for all nodes (E. Bergamini, M. Borassi, P. Crescenzi, A. Marino, H. Meyerhenke, “Computing Top-k Closeness Centrality Faster in Unweighted
+Graphs”, ALENEX’16)</p></li>
+</ul>
+<p>generator module:</p>
+<ul class="simple">
+<li><p>generator.HyperbolicGenerator: a fast parallel generator for complex networks based on hyperbolic geometry (Looz, Meyerhenke, Prutkin ‘15: Random
+Hyperbolic Graphs in Subquadratic Time)</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Minor:</p>
+<p>re-introduced an overview(G)-function that collects and prints some infromation about a graph</p>
+<p>updated documentation</p>
+<p>some IO bugfixes</p>
+<p>graph module:</p>
+<ul class="simple">
+<li><p>Subgraph class has been removed, its functionality is now in Graph::subgraphFromNodes(…)</p></li>
+</ul>
+<p>generator module:</p>
+<ul class="simple">
+<li><p>Many graph generators now provide fit(G) method that returns an instance of the generator such that generated graphs are similar to the provided
+one</p></li>
+<li><p>Improved performance of the BarabasiAlbert generator by implementing Batagelj’s method</p></li>
+</ul>
+<p>distance module:</p>
+<ul class="simple">
+<li><p>distance.CommuteTimeDistance: a node distance measure, distance is low when there are many short paths connecting two nodes</p></li>
+<li><p>Adapted Diameter class to Algorithm convention; diameter algorithm can be chosen via enum in the constructor</p></li>
+<li><p>Adapted EffectiveDiameter class to Algorithm convention resulting in the classes ApproxEffectiveDiameter, ApproxHopPlot,
+ApproxNeighborhoodFunction; added exact computation of the Neighborhood Function</p></li>
+</ul>
+<p>centrality module:</p>
+<ul class="simple">
+<li><p>centrality.SpanningEdgeCentraliy: edge centrality measure representing the fraction of spanning trees containing the edge</p></li>
+<li><p>centrality.ApproxCloseness: new algorithm for approximating closeness centrality based on “Computing Classic Closeness Centrality, at Scale”, Cohen
+et al.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="may-9-2016-networkit-journal-paper-accepted-at-network-science">
+<h3>May 9, 2016: <strong>NetworKit journal paper accepted at Network Science</strong><a class="headerlink" href="#may-9-2016-networkit-journal-paper-accepted-at-network-science" title="Permalink to this heading">¶</a></h3>
+<p>Our paper describing NetworKit as a toolkit for large-scale complex network analysis has been accepted by the Cambridge University Press journal
+Network Science. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="apr-12-2016-publication-accepted-at-snam">
+<h3>Apr 12, 2016: <strong>Publication accepted at SNAM</strong><a class="headerlink" href="#apr-12-2016-publication-accepted-at-snam" title="Permalink to this heading">¶</a></h3>
+<p>Our paper on sparsification methods for social networks with NetworKit (authors: Linder, Staudt, Hamann, Meyerhenke, Wagner) has been accepted for
+publication in Social Network Analysis and Mining. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="apr-12-2016-publication-accepted-at-internet-mathematics">
+<h3>Apr 12, 2016: <strong>Publication accepted at Internet Mathematics</strong><a class="headerlink" href="#apr-12-2016-publication-accepted-at-internet-mathematics" title="Permalink to this heading">¶</a></h3>
+<p>Our paper on approximating betweenness centrality in dynamic networks with NetworKit (authors: Bergamini, Meyerhenke) has been accepted for
+publication in Internet Mathematics. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="nov-16-2016-publication-accepted-at-alenex16">
+<h3>Nov 16, 2016: <strong>Publication accepted at ALENEX16</strong><a class="headerlink" href="#nov-16-2016-publication-accepted-at-alenex16" title="Permalink to this heading">¶</a></h3>
+<p>Our paper on finding the top-k nodes with highest closeness centrality with NetworKit (authors: Bergamini, Borassi, Crescenzi, Marino, Meyerhenke) has
+been accepted at the 18th Meeting on Algorithm Engineering and Experiments, ALENEX 2016. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="nov-10-2015-networkit-4-0-released">
+<h3>Nov 10, 2015: <strong>NetworKit 4.0 released</strong><a class="headerlink" href="#nov-10-2015-networkit-4-0-released" title="Permalink to this heading">¶</a></h3>
+<p>We have just released NetworKit 4.0. Apart from several improvements to algorithms and architecture, the main feature of this release is a new front
+end for exploratory network analysis.</p>
+<p>The new version is now available from the Python Package index. Try upgrading with <code class="code docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">—upgrade</span> <span class="pre">networkit</span></code> <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="aug-19-2015-networkit-3-6-released">
+<h3>Aug 19, 2015: <strong>NetworKit 3.6 released</strong><a class="headerlink" href="#aug-19-2015-networkit-3-6-released" title="Permalink to this heading">¶</a></h3>
+<p>We have released version 3.6 today. Thank you to all contributors. Here are the release notes.</p>
+<p><em>Release Notes</em></p>
+<p>Major Updates:</p>
+<p>Link Prediction</p>
+<p>Link prediction methods try to predict the likelihood of a future or missing connection between two nodes in a given network. The new module
+networkit.linkprediction contains various methods from the literature.</p>
+<p>Edge Sparsification</p>
+<p>Sparsification reduces the size of networks while preserving structural and statistical properties of interest. The module networkit.sparsification
+provides methods for rating edges by importance and then filtering globally by these scores. The methods are described in
+<a class="reference external" href="http://arxiv.org/abs/1505.00564">http://arxiv.org/abs/1505.00564</a></p>
+<p>Further Updates:</p>
+<ul class="simple">
+<li><p>Improved support for directed graph in analysis algorithms</p></li>
+<li><p>Improved support for the Intel compiler</p></li>
+<li><p>Reader/writer for the GEXF (Gephi) graph file format</p></li>
+<li><p>EdgeListReader now reads edge list with arbitrary node ids (e.g.strings) when continuous=False; getNodeMap() returns a mapping from file node ids to
+graph node ids</p></li>
+<li><p>EdgeListReader/Writer now add weights when reading files/writing graphs to file. <br /> <br /></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="jun-16-2015-publication-accepted-at-esa15">
+<h3>Jun 16, 2015: <strong>Publication accepted at ESA15</strong><a class="headerlink" href="#jun-16-2015-publication-accepted-at-esa15" title="Permalink to this heading">¶</a></h3>
+<p>Our paper on the approximation of betweenness centrality in fully-dynamic networks with NetworKit (authors: Bergamini, Meyerhenke) has been accepted
+at the 23rd European Symposium on Algorithms, ESA 2015. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="jun-9-2015-networkit-3-5-released">
+<h3>Jun 9, 2015: <strong>NetworKit 3.5 released</strong><a class="headerlink" href="#jun-9-2015-networkit-3-5-released" title="Permalink to this heading">¶</a></h3>
+<p>We have released NetworKit 3.5 a couple days ago. Please upgrade to the latest version to receive a number of improvements. We also appreciate
+feedback on the new release.</p>
+<p><em>Release Notes</em></p>
+<p>This release focused on bugfixes, under-the-hood improvements and refactoring.</p>
+<ul class="simple">
+<li><p>Various bugfixes and stability improvements</p></li>
+<li><p>Abort signal handling: developed mechanism to interrupt long-running algorithms via the ctrl+C command – already supported in community.PLM,
+centrality.Betweennness, centrality.ApproxBetweenness, centrality.ApproxBetweenness2, centrality.PageRank</p></li>
+<li><p>Efficient node and edge iteration on the Python layer: G.forEdges, G.forNodes…</p></li>
+<li><p>Constant-time check if a graph has self-loops: Graph.hasSelfLoops()</p></li>
+<li><p>networkit.setSeed: set a fixed seed for the random number generator</p></li>
+<li><p>Refactoring: CoreDecomposition and LocalClusteringCoefficient now in centrality module</p></li>
+<li><p>Refactoring: introduced Python/Cython base classes: Centrality, CommunityDetector</p></li>
+<li><p>Removed: CNM community detection algorithm</p></li>
+<li><p>The GIL (Global Interpreter Lock) is released for many algorithms in order to make it possible to execute multiple computations in parallel in a
+single Python process.</p></li>
+<li><p>Improved support for directed graphs in many algorithms <br /> <br /></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="dec-4-2014-networkit-3-4-released">
+<h3>Dec 4, 2014: <strong>NetworKit 3.4 released</strong><a class="headerlink" href="#dec-4-2014-networkit-3-4-released" title="Permalink to this heading">¶</a></h3>
+<p>Today we have released version 3.4 of NetworKit, the open-source toolkit for high-performance network analysis. This release brings numerous critical
+bugfixes as well as useful incremental features and performance optimizations. We are also moving towards consistent interfaces for algorithms. We
+have also further simplified the installation dependencies.</p>
+<p>Thank you to the numerous people who have contributed code to this release.</p>
+<p>More information can be found on <a class="reference external" href="https://networkit.github.io/">https://networkit.github.io/</a>. We welcome user feedback and opportunities for collaboration.</p>
+<p>Release Notes</p>
+<p>Features</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>graph</dt><dd><ul>
+<li><p>Graph can be copied on Python level</p></li>
+<li><p>spanning tree/forest (graph.SpanningForest)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>algorithms in general * Edmonds-Karp max flow algorithm (flow.EdmondsKarp) * core decomposition works for directed graphs
+(properties.CoreDecomposition) * algebraic distance, a structural distance measure in graphs (distance.AlgebraicDistance)</p></li>
+<li><dl class="simple">
+<dt>IO</dt><dd><ul>
+<li><p>there is no longer a default graph file format</p></li>
+<li><p>read and write the GML graph file format (graphio.GMLGraphReader/Writer)</p></li>
+<li><p>conversion of directed to undirected graph (Graph.toUndirected)</p></li>
+<li><p>reader and writer for the GraphTool binary graph format (graphio.GraphToolBinaryReader)</p></li>
+<li><p>METIS graph reader supports arbitrary edge weights (graphio.METISGraphReader)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>algebraic</dt><dd><ul>
+<li><p>algebraic backend supports rectangular matrices (Matrix.h)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>community detection</dt><dd><ul>
+<li><p>turbo mode for PLM community detection algorithm gives a factor 2 speedup at the cost of more memory (community.PLM)</p></li>
+<li><p>Cut Clustering community detection algorithm (community.CutClustering)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>generators</dt><dd><ul>
+<li><p>Erdös-Renyi generator can generate directed graphs (generators.ErdosRenyiGenerator)</p></li>
+<li><p>configuration model graph generator for generating a random simple graph with exactly the given degree sequence
+(generators.ConfigurationModelGenerator)</p></li>
+<li><p>generator for power law degree sequences (generators.PowerlawDegreeSequence)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Bugfixes</p>
+<ul class="simple">
+<li><p>GraphMLReader improved (graphio.GraphMLReader)</p></li>
+<li><p>ConnectedComponents usability improved</p></li>
+<li><p>KONECT reader (graphio.KONECTGraphReader)</p></li>
+<li><p>fixed build problem on case-insensitive file systems</p></li>
+<li><p>closed memory leaks by adding missing destructors on the Cython</p></li>
+<li><p>improved memory management by adding missing move constructors</p></li>
+<li><p>DynamicForestFireGenerator fixed</p></li>
+</ul>
+<p>Refactoring</p>
+<ul class="simple">
+<li><p>standardization of analysis algorithm interface: parameters given by constructor, computation triggered in run method, results retrieved via getter
+methods</p></li>
+<li><p>run methods return self to allow chaining</p></li>
+<li><p>introducing unit tests on Python layer</p></li>
+</ul>
+<p>Build and Installation</p>
+<ul class="simple">
+<li><p>pip installation does no longer require Cython</p></li>
+<li><p>pip installation does no longer require SCons, minimal build system as fallback if SCons is missing <br /> <br /></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="oct-21-2014-publication-accepted-at-alenex15">
+<h3>Oct 21, 2014: <strong>Publication accepted at ALENEX15</strong><a class="headerlink" href="#oct-21-2014-publication-accepted-at-alenex15" title="Permalink to this heading">¶</a></h3>
+<p>Our paper on approximating betweenness centrality in dynamic networks with NetworKit (authors: Bergamini, Meyerhenke, Staudt) has been accepted at the
+17th Meeting on Algorithm Engineering and Experiments, ALENEX 2015. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="sep-28-2014-networkit-presented-at-summer-school-tutorial-on-network-analysis">
+<h3>Sep 28, 2014: <strong>NetworKit presented at summer school tutorial on network analysis</strong><a class="headerlink" href="#sep-28-2014-networkit-presented-at-summer-school-tutorial-on-network-analysis" title="Permalink to this heading">¶</a></h3>
+<p>In a joint tutorial on Algorithmic methods for network analysis with Dorothea Wagner for the summer school of the DFG priority programme Algorithm
+Engineering, Henning Meyerhenke introduced NetworKit to the participants. The PhD students from Germany and other European countries successfully
+solved various network analysis tasks with NetworKit during the tutorial. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="sep-28-2014-publication-accepted">
+<h3>Sep 28, 2014: <strong>Publication accepted</strong><a class="headerlink" href="#sep-28-2014-publication-accepted" title="Permalink to this heading">¶</a></h3>
+<p>Our paper on selective community detection with NetworKit (authors: Staudt, Marrakchi, Meyerhenke) has been accepted at the First International
+Workshop on High Performance Big Graph Data Management, Analysis, and Mining (in Conjunction with IEEE BigData’14). <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="aug-22-2014-networkit-3-3-released">
+<h3>Aug 22, 2014: <strong>NetworKit 3.3 released</strong><a class="headerlink" href="#aug-22-2014-networkit-3-3-released" title="Permalink to this heading">¶</a></h3>
+<p>NetworKit 3.3 has been released, including the following improvements to our network analysis framework:</p>
+<ul class="simple">
+<li><p>renamed package to “networkit” according to Python packaging convention</p></li>
+<li><p>restructured package to enable “pip install networkit”</p></li>
+<li><p>improved community detection algorithms</p></li>
+<li><p>improved diameter algorithms</p></li>
+<li><p>added support for efficient, arbitrary edge attributes via edge indexing</p></li>
+<li><p>Eigenvector Centrality &amp; PageRank on basis of scipy</p></li>
+<li><p>spectral methods for graph partitioning  (partitioning.SpectralPartitioner), drawing  (viztools.layout.SpectralLayout) and coloring
+(coloring.SpectralColoring)</p></li>
+<li><p>new graph generators: stochastic blockmodel (generators.StochasticBlockmodel), Watts-Strogatz model (generators.WattsStrogatzGenerator) and Forest
+Fire model (generators.DynamicForestFireGenerator)</p></li>
+<li><p>union find data structure (structures/UnionFind)</p></li>
+<li><p>simple spanning forest algorithm (graph.SpanningForest)</p></li>
+<li><p>fast algorithm for partition intersection (community/PartitionIntersection)</p></li>
+<li><p>hub dominance in communities (community.HubDominance)</p></li>
+<li><p>reader for Matlab adjacency matrices</p></li>
+<li><p>support for reading and writing Covers</p></li>
+<li><p>performance improvements in Gephi streaming interface <br /> <br /></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="jul-1-2014-networkit-3-2-released">
+<h3>Jul 1, 2014: <strong>NetworKit 3.2 released</strong><a class="headerlink" href="#jul-1-2014-networkit-3-2-released" title="Permalink to this heading">¶</a></h3>
+<p>NetworKit 3.2 has been released, including major improvements to our network analysis framework:</p>
+<p><em>Critical Bugfixes</em></p>
+<ul class="simple">
+<li><p>graph data structure supports directed graphs</p></li>
+<li><p>optimized connected components algorithm (properties.ParallelConnectedComponents)</p></li>
+<li><p>faster heuristic algorithm for approximating betweenness centrality (centrality.ApproxBetweenness2)</p></li>
+<li><p>Gephi support: export of node attributes, Gephi streaming plugin support</p></li>
+<li><p>graph generators: Dorogovtsev-Mendes model</p></li>
+<li><p>improved portability (Windows)</p></li>
+<li><p>overhaul of graph file input <br /> <br /></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="may-15-2014-new-website-online">
+<h3>May 15, 2014: <strong>New website online</strong><a class="headerlink" href="#may-15-2014-new-website-online" title="Permalink to this heading">¶</a></h3>
+<p>NetworKit, our tool suite for high-performance network analysis, has its own website now! <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="apr-25-2014-introductory-talk">
+<h3>Apr 25, 2014: <strong>Introductory talk</strong><a class="headerlink" href="#apr-25-2014-introductory-talk" title="Permalink to this heading">¶</a></h3>
+<p>Christian Staudt gave an introductory talk about the current release of NetworKit. The slides and a video of the talk are available on the
+Documentation page. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="apr-15-2014-networkit-3-1-released">
+<h3>Apr 15, 2014: <strong>NetworKit 3.1 released</strong><a class="headerlink" href="#apr-15-2014-networkit-3-1-released" title="Permalink to this heading">¶</a></h3>
+<p>Version 3.1 is an incremental update to our tool suite for high-performance network analysis. Improvements and new features include Eigenvector
+centrality, PageRank, Betweenness centrality approximation, R-MAT graph generator, BFS/DFS iterators, improved BFS and Dijkstra classes, and improved
+memory footprint when using large objects on the Python level. More detailed information can be found in the accompanying publication. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="mar-13-2014-networkit-3-0-released">
+<h3>Mar 13, 2014: <strong>NetworKit 3.0 released</strong><a class="headerlink" href="#mar-13-2014-networkit-3-0-released" title="Permalink to this heading">¶</a></h3>
+<p>NetworKit 3.0 is the next major release of our open-source toolkit for high-performance network analysis. Since the last release in November,
+NetworKit has received several improvements under the hood as well as an extension of the feature set. What started as a testbed for parallel
+community detection algorithms has evolved into a diverse set of tools that make it easy to characterize complex networks. This has been successfully
+scaled to large data sets with up to several billions of edges.</p>
+<p>This being an open-source project, we are very interested in incorporating feedback from data analysts and algorithm engineers. Feel free to contact
+us with any question on how NetworKit could be applied in your field of research. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="nov-11-2013-networkit-2-0-released">
+<h3>Nov 11, 2013: <strong>NetworKit 2.0 released</strong><a class="headerlink" href="#nov-11-2013-networkit-2-0-released" title="Permalink to this heading">¶</a></h3>
+<p>Second major release of NetworKit. The toolkit has been improved by adding several graph algorithms and an interactive shell based on Python/Cython.
+We begin a more frequent release cycle. <br /> <br /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="mar-17-2013-networkit-1-0-released">
+<h3>Mar 17, 2013: <strong>NetworKit 1.0 released</strong><a class="headerlink" href="#mar-17-2013-networkit-1-0-released" title="Permalink to this heading">¶</a></h3>
+<p>Initial release of the community detection component. With this release of NetworKit, we would like to encourage reproduction of our results, reuse of
+code and contributions by the community. <br /> <br /></p>
+</section>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+      
+    </p>
+    <p style="float:left; max-width: 70%;">
+        &copy; Copyright 2024 Humboldt-Universität zu Berlin - Department of Computer Science - Modeling and Analysis of Complex Systems and contributors.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.1.2.<br/>
+    </p>
+    <span style="padding-left: 10px">
+      <a href="contact.html">Contact, Imprint and Privacy</a>
+    </span>
+  </div>
+</footer>
+  </body>
+</html>
