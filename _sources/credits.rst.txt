@@ -1,0 +1,134 @@
+.. role:: hidden
+   :class: hidden
+
+=====================
+Credits & References
+=====================
+
+:hidden:`HiddenBiggerHeadingFont`
+---------------------------------
+
+History
+~~~~~~~
+
+NetworKit is maintained by the research group `Exascale Algorithm Engineering <https://eae.iti.kit.edu/english>`_ of the Scientific Computing Center at the `Karlsruhe Institute of Technology (KIT) <https://www.kit.edu/english/>`_.
+Until 2025, the `Research Group Modeling and Analysis of Complex Systems <https://www.informatik.hu-berlin.de/de/forschung/gebiete/macsy>`_ of the Institute of Computer Science at the `Humboldt-University of Berlin <https://www.hu-berlin.de/de>`_ maintained NetworKit.
+NetworKit was seeded by the project `Parallel analysis of dynamic networks -- Algorithm engineering of efficient combinatorial and numerical methods <https://web.archive.org/web/20240706140018/http://parco.iti.kit.edu/forschung-en.shtml>`_, for which we acknowledge
+financial support by MWK Baden-Württemberg. In this project Henning Meyerhenke was the principal investigator and Christian L. Staudt was the main PhD student. Since NetworKit's start in 2013, it has grown well
+beyond the original MWK project and our group, with contributors and users from all over the world.
+
+Maintainers
+~~~~~~~~~~~
+
+- Eugenio Angriman
+- Fabian Brandt-Tumescheit
+- Mikhail Kirilin
+- Henning Meyerhenke
+- Andreas Scharf
+
+Past Maintainers
+~~~~~~~~~~~~~~~~
+
+- Elisabetta Bergamini
+- Kolja Esders
+- Alexander van der Grinten
+- Christian L. Staudt
+- Maximilian Vogel
+
+Contributors
+~~~~~~~~~~~~
+
+- Klaus Ahrens
+- Thijs Baaijen
+- Roman Bange
+- Jason Barnett
+- Lukas Barth
+- Miriam Beddig
+- Lukas Berner
+- Stefan Bertsch
+- Pratistha Bhattarai
+- Andreas Bilke
+- Simon Bischof
+- Guido Brückner
+- Jonas Charfreitag
+- Hanzhi Chen
+- Daniel Darabos
+- Quan Do
+- Stephan Druskat
+- Mark Erb
+- Roman Erhardt
+- Philipp Fischbeck
+- Patrick Flick
+- John Gelhausen
+- Frieda Gerharz
+- Ilan Gold
+- Lars Gottesbüren
+- Jeff Green
+- David Grinberg
+- Michael Hamann
+- Lukas Hartmann
+- Ali Haydari
+- Till Hoffmann
+- Daniel Hoske
+- Tony Jin
+- Rasmus Joergensen
+- Yani Kolev
+- Alexander Leonhardt
+- Marten Lienen
+- Gerd Lindner
+- Moritz v. Looz
+- Sarah Lutteropp
+- Yassine Marrakchi
+- Franz-Benjamin Mocnik
+- Ramlah Munir
+- Charmaine Nyambura Ndolo
+- Marc Nemes
+- F. Nguyen
+- Chien-Chun Ni
+- Mustafa Özdayi
+- Manuel Penschuck
+- Lucas Archimedes Gregorio Henr Petersen
+- Angus Petholz
+- Marvin Pogoda
+- Jure Pustoslemšek
+- Marcel Radermacher
+- Klara Reichard
+- Matteo Riondato
+- Marvin Ritter
+- Daeho Ro
+- Aleksejs Sazonovs
+- Dominik Schweisgut
+- Arun Sharma
+- Arie Slobbe
+- Anton Soloviev
+- Jonas Spinner
+- Jonathan Striebel
+- Hung Tran
+- Florian Weber
+- Deklan Webster
+- Michael Wegner
+- Jörg Weisbarth
+- David Weiss
+- Florian Willich
+- Shangdi Yu
+- Siyan Zhao
+
+License
+~~~~~~~
+
+The source code of this program is released under the `MIT License <https://opensource.org/licenses/MIT>`_.  We ask you to cite us if you use this code in your project (c.f. our `publications <publications.html>`_ and especially the `technical report <https://arxiv.org/abs/1403.3005>`_). Feedback is also welcome.
+
+External Code
+~~~~~~~~~~~~~
+
+The program source includes:
+
+- the `tlx <https://github.com/tlx/tlx>`_ collection of C++ data structures, algorithms and helpers by Timo Bingmann and contributors
+- the `TTMath <https://www.ttmath.org/>`_ bignum library by Tomasz Sowa
+- the `Dynamic Hashed Blocks (DHB) <https://github.com/hu-macsy/dhb>`_ data structure for dynamic graphs by Alexander van der Grinten, Maria Predari and Florian Willich
+- the `GoogleTest <https://github.com/google/googletest>`_ framework, which runs our unit tests
+
+Data sets
+~~~~~~~~~
+
+Data sets that are often used for benchmarking algorithms in NetworKit are listed on our `data sets <datasets.html>`_ page.

@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Get Started</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css?v=fa2d15c4" />
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/particles.min.js"></script>
+    <script src="_static/custom.js"></script>
+    <script src="_static/publications.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/custom-bootstrap-sphinx.js "></script>
+
+  </head><body>
+  
+  <a href="https://github.com/networkit/networkit"
+     class="visible-desktop hidden-xs"><img style="position: absolute; width:auto; height: auto; max-width: 200px; top:
+     0px; right: 0; border: 0; z-index: 3;" src="_static/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>  
+
+
+  
+      <div id="fancy-particles-small"></div>
+  <div id="navbar" class="navbar navbar-default ">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div style="float:left;height:auto; line-height:30px;">
+          <div style="overflow:hidden; line-height:15px">
+              <span style="display:block">
+                <a style="text-decoration: none; padding-top: 19.5px; padding-left:15px; height:30px;" class="navbar-brand" href="index.html">
+                  NetworKit</a>
+              </span>
+              <div style="font-size:9pt; clear:left;">Large-Scale Network Analysis</div>              
+          </div>
+        </div>
+      </div>
+
+
+
+        <div id="main-nav" class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="#">Get Started</a></li>
+                <li><a href="dev-docs/index.html">Documentation</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="networkit-day.html">NetworKit Day</a></li>
+                <li><a href="credits.html">Credits & References</a></li>
+            
+            
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+    
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Get Started</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a><ul>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#linux">Linux</a></li>
+<li><a class="reference internal" href="#macos">macOS</a></li>
+<li><a class="reference internal" href="#windows">Windows</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#build-networkit-from-source">Build NetworKit from Source</a></li>
+<li><a class="reference internal" href="#use-networkit-with-ipython">Use NetworKit with IPython</a><ul>
+<li><a class="reference internal" href="#ipython-terminal">IPython Terminal</a></li>
+<li><a class="reference internal" href="#jupyter-notebook">Jupyter Notebook</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#networkit-usage-example">NetworKit Usage Example</a></li>
+<li><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li><a class="reference internal" href="#contributions">Contributions</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <section id="get-started">
+<span id="id1"></span><h1>Get Started<a class="headerlink" href="#get-started" title="Link to this heading">¶</a></h1>
+<p>Take a look at <a class="reference internal" href="#installation">Installation</a> or <a class="reference internal" href="#build-networkit-from-source">Build NetworKit from Source</a> in order to install NetworKit as a Python3 package or directly build it from source.</p>
+<p>With NetworKit as a Python extension module, you get access to native high-performance code and can at the same time work interactively in the Python ecosystem.
+Although the standard Python interpreter works fine, we recommend <a class="reference external" href="https://ipython.readthedocs.io/en/stable/">IPython</a> as a great environment for scientific
+workflows. View the <a class="reference internal" href="#ipython-quickstart-guide">IPython Quickstart Guide</a> for installation instructions and how to use NetworKit with IPython.</p>
+<p>Once you have installed NetworKit, please make sure to check out our
+<a class="reference external" href="https://github.com/networkit/networkit/blob/master/notebooks/User-Guide.ipynb">NetworKit UserGuide</a> for an overview of the features provided
+in NetworKit.</p>
+<p><div style="padding-top: 25px; border-bottom: 1px solid #d4d7d9;"></div></p>
+<section id="installation">
+<span id="id2"></span><h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<section id="requirements">
+<span id="installation-requirements"></span><h3>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">¶</a></h3>
+<p>NetworKit ships as a prebuilt package for Linux, macOS and Windows. To install it, you only need Python 3.10 or higher. You do not need a compiler.
+The following package managers provide NetworKit:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Package manager</p></th>
+<th class="head"><p>Python module</p></th>
+<th class="head"><p>C++ core library only</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pip</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">networkit</span></code></p></td>
+<td><p>–</p></td>
+</tr>
+<tr class="row-odd"><td><p>conda</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">networkit</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">libnetworkit</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>brew</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">networkit</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">libnetworkit</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>spack</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">spack</span> <span class="pre">install</span> <span class="pre">py-networkit</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">spack</span> <span class="pre">install</span> <span class="pre">libnetworkit</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>If you want the most recent development version, you can install a nightly build.
+We publish it on the <a class="reference external" href="https://anaconda.org/networkit-nightly/networkit-nightly">networkit-nightly</a> channel after each push to the <code class="code docutils literal notranslate"><span class="pre">master</span></code> branch:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>--extra-index-url<span class="w"> </span>https://pypi.anaconda.org/networkit-nightly/simple<span class="w"> </span>networkit-nightly
+</pre></div>
+</div>
+</section>
+<section id="linux">
+<span id="id3"></span><h3>Linux<a class="headerlink" href="#linux" title="Link to this heading">¶</a></h3>
+<p>On Linux, <code class="code docutils literal notranslate"><span class="pre">pip</span></code> is the most common way to install NetworKit.
+Recent Debian and Ubuntu releases do not let <code class="code docutils literal notranslate"><span class="pre">pip</span></code> install packages into the system Python.
+We therefore recommend a virtual environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install Python3 with the venv module (Debian/Ubuntu)</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3<span class="w"> </span>python3-venv
+
+<span class="c1"># Create and activate a virtual environment</span>
+python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>~/networkit-env
+<span class="nb">source</span><span class="w"> </span>~/networkit-env/bin/activate
+
+<span class="c1"># And finally ... install NetworKit</span>
+pip<span class="w"> </span>install<span class="w"> </span>networkit
+</pre></div>
+</div>
+</section>
+<section id="macos">
+<span id="id4"></span><h3>macOS<a class="headerlink" href="#macos" title="Link to this heading">¶</a></h3>
+<p>On macOS, we recommend <code class="code docutils literal notranslate"><span class="pre">brew</span></code> for managing NetworKit installations. The brew formula handles all dependencies.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install Homebrew (if needed)</span>
+/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">"</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">"</span>
+
+<span class="c1"># Install NetworKit via brew</span>
+brew<span class="w"> </span>install<span class="w"> </span>networkit
+</pre></div>
+</div>
+<p>Alternatively, you can install NetworKit with <code class="code docutils literal notranslate"><span class="pre">pip</span></code> in a virtual environment, as shown for Linux.</p>
+</section>
+<section id="windows">
+<span id="id5"></span><h3>Windows<a class="headerlink" href="#windows" title="Link to this heading">¶</a></h3>
+<p>On Windows, first install the official <a class="reference external" href="https://www.python.org/downloads/windows/">Python package</a>. Then install NetworKit from a command prompt:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>networkit
+</pre></div>
+</div>
+<p>You can also use the <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install">Windows Subsystem for Linux</a> (WSL).
+Inside WSL, follow the instructions for Linux.</p>
+<p><div style="padding-top: 25px; border-bottom: 1px solid #d4d7d9;"></div></p>
+</section>
+</section>
+<section id="build-networkit-from-source">
+<span id="id6"></span><h2>Build NetworKit from Source<a class="headerlink" href="#build-networkit-from-source" title="Link to this heading">¶</a></h2>
+<p>You can clone NetworKit from <a class="reference external" href="https://github.com/networkit/networkit">GitHub</a> with git.
+To build NetworKit from source, you need the following software:</p>
+<ul class="simple">
+<li><p>A modern C++ compiler, e.g.: <a class="reference external" href="https://gcc.gnu.org">g++</a> (&gt;= 10.0), <a class="reference external" href="https://clang.llvm.org">clang++</a> (&gt;= 11.0) or MSVC (&gt;= 14.30)</p></li>
+<li><p>OpenMP for parallelism (usually ships with the compiler)</p></li>
+<li><p>Python3 (3.10 or higher is supported)</p>
+<ul>
+<li><p>Development libraries for Python3. The package name depends on your distribution. Examples:</p>
+<ul>
+<li><p>Debian/Ubuntu: <code class="code docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">python3-dev</span></code></p></li>
+<li><p>RHEL/CentOS: <code class="code docutils literal notranslate"><span class="pre">dnf</span> <span class="pre">install</span> <span class="pre">python3-devel</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://pypi.org/project/pip/">Pip</a></p></li>
+<li><p><a class="reference external" href="https://cmake.org/">CMake</a> version 3.6 or higher (e.g., <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">cmake</span></code>)</p></li>
+<li><p>Build System: <a class="reference external" href="https://www.gnu.org/software/make/">Make</a> or <a class="reference external" href="https://ninja-build.org/">Ninja</a></p></li>
+<li><p><a class="reference external" href="https://cython.org/">Cython</a> (e.g., <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">cython</span></code>)</p></li>
+</ul>
+<p>On Windows, the build needs the free Community Edition of <a class="reference external" href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a> or higher.
+The build must be able to find the MSVC compiler (<code class="code docutils literal notranslate"><span class="pre">cl.exe</span></code>).
+One way to achieve this is to start the build from the “Native Tools Command Prompt” that Visual Studio provides.</p>
+<p>For the build steps, we refer to the <a class="reference external" href="https://github.com/networkit/networkit#building-from-source">README file</a> of our GitHub repository.</p>
+<p><div style="padding-top: 25px; border-bottom: 1px solid #d4d7d9;"></div></p>
+</section>
+<section id="use-networkit-with-ipython">
+<span id="ipython-quickstart-guide"></span><h2>Use NetworKit with IPython<a class="headerlink" href="#use-networkit-with-ipython" title="Link to this heading">¶</a></h2>
+<p>First make sure you have installed IPython, e.g. via pip: <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ipython</span></code>.</p>
+<section id="ipython-terminal">
+<h3>IPython Terminal<a class="headerlink" href="#ipython-terminal" title="Link to this heading">¶</a></h3>
+<p>If you want to use NetworKit in the IPython terminal, type the following commands in your OS terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ipython
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">networkit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>The first line opens the IPython terminal. The second line imports the <em>networkit</em> Python module. After that, you should be able to use NetworKit interactively.
+For usage examples, refer to the <a class="reference external" href="https://github.com/networkit/networkit/blob/master/notebooks/User-Guide.ipynb">NetworKit UserGuide</a>.</p>
+</section>
+<section id="jupyter-notebook">
+<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link to this heading">¶</a></h3>
+<p>Additionally, we recommend that you familiarize yourself with NetworKit through experimenting with the interactive notebook <code class="code docutils literal notranslate"><span class="pre">User-Guide.ipynb</span></code>.
+It is located in the folder <code class="code docutils literal notranslate"><span class="pre">notebooks</span></code> of the NetworKit repository. The user guide introduces a large portion of NetworKit’s functionality with usage examples.
+The same folder holds further notebooks on specific topics, such as centrality, community detection and graph generators.
+To display and work with these notebooks, you have to install Jupyter and start a local notebook server from the terminal with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>notebook
+jupyter<span class="w"> </span>notebook
+</pre></div>
+</div>
+<p>If you run into any problems with Jupyter, head over to the <a class="reference external" href="https://docs.jupyter.org/en/latest/install.html">Jupyter documentation</a>. If the notebook server starts as it is supposed to, your default browser should open a web interface. Otherwise, open it manually. Then open <code class="code docutils literal notranslate"><span class="pre">User-Guide.ipynb</span></code> from the folder <code class="code docutils literal notranslate"><span class="pre">notebooks</span></code>.</p>
+<p>To show plots within the notebooks, place the following two lines at the beginning of your notebook:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="networkit-usage-example">
+<h2>NetworKit Usage Example<a class="headerlink" href="#networkit-usage-example" title="Link to this heading">¶</a></h2>
+<p>Now that you are done installing NetworKit, you might want to try the following example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">networkit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">generators</span><span class="o">.</span><span class="n">HyperbolicGenerator</span><span class="p">(</span><span class="mf">1e5</span><span class="p">)</span><span class="o">.</span><span class="n">generate</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">overview</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="go">Network Properties:</span>
+<span class="go">nodes, edges                    100000, 299711</span>
+<span class="go">directed?                       False</span>
+<span class="go">weighted?                       False</span>
+<span class="go">isolated nodes                  1838</span>
+<span class="go">self-loops                      0</span>
+<span class="go">density                         0.000060</span>
+<span class="go">clustering coefficient          0.716217</span>
+<span class="go">min/max/avg degree              0, 1129, 5.994220</span>
+<span class="go">degree assortativity            -0.002406</span>
+<span class="go">number of connected components  4159</span>
+<span class="go">size of largest component       71019 (71.02 %)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">communities</span> <span class="o">=</span> <span class="n">community</span><span class="o">.</span><span class="n">detectCommunities</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">inspect</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">Communities detected in 0.45748 [s]</span>
+<span class="go">solution properties:</span>
+<span class="go">-------------------  -------------</span>
+<span class="go"># communities        4381</span>
+<span class="go">min community size      1</span>
+<span class="go">max community size   1782</span>
+<span class="go">avg. community size    22.8258</span>
+<span class="go">imbalance              77.4783</span>
+<span class="go">edge cut             1416</span>
+<span class="go">edge cut (portion)      0.00472455</span>
+<span class="go">modularity              0.989744</span>
+<span class="go">-------------------  -------------</span>
+
+<span class="gp">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<p><div style="padding-top: 25px; border-bottom: 1px solid #d4d7d9;"></div></p>
+</section>
+<section id="known-issues">
+<h2>Known Issues<a class="headerlink" href="#known-issues" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Some algorithms (e.g. StronglyConnectedComponents) are implemented in a recursive manner and for large input may exceed the default stack size on your platform.
+To work around this issue, you can lift the stack size limit for your terminal process and subsequent child processes with <code class="code docutils literal notranslate"><span class="pre">ulimit</span> <span class="pre">-s</span> <span class="pre">unlimited</span></code> or <code class="code docutils literal notranslate"><span class="pre">ulimit</span> <span class="pre">-Hs</span></code> (to the hard limit if there is one). It is also possible to change resource limits from Python directly with <code class="code docutils literal notranslate"><span class="pre">import</span> <span class="pre">resource;</span> <span class="pre">resource.setrlimit(resource.RLIMIT_STACK,</span> <span class="pre">(-1,</span> <span class="pre">-1))</span></code>.</p></li>
+<li><p>On macOS, it can happen that the g++ compiler is unable to locate specific Linux-based header files. An example would be an error during the compilation of a C++ header which includes <code class="code docutils literal notranslate"><span class="pre">stdint</span></code>. This can generate the following error message: <code class="code docutils literal notranslate"><span class="pre">fatal</span> <span class="pre">error:</span> <span class="pre">sys/_types/_int8_t.h:</span> <span class="pre">No</span> <span class="pre">such</span> <span class="pre">file</span> <span class="pre">or</span> <span class="pre">directory</span></code>. This error will most likely happen on new systems or after a major system upgrade. In this case you need to (again) install the Xcode command line tools: <code class="code docutils literal notranslate"><span class="pre">xcode-select</span> <span class="pre">--install</span></code>. Afterwards the code should compile completely.</p></li>
+</ul>
+<p><div style="padding-top: 25px; border-bottom: 1px solid #d4d7d9;"></div></p>
+</section>
+<section id="contributions">
+<h2>Contributions<a class="headerlink" href="#contributions" title="Link to this heading">¶</a></h2>
+<p>We would like to encourage contributions to the NetworKit source code. See the <a class="reference external" href="https://networkit.github.io/dev-docs/DevGuide.html#devGuide">NetworKit Development Guide</a> for instructions. For support
+please contact the <a class="reference external" href="https://www.lists.kit.edu/sympa/subscribe/networkit">mailing list</a>.</p>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+      
+    </p>
+    <p style="float:left; max-width: 70%;">
+        &copy; Copyright 2026 Karlsruhe Institute of Technology (KIT) - Scientific Computing Center - Exascale Algorithm Engineering and contributors.<br/>
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1.<br/>
+    </p>
+    <span style="padding-left: 10px">
+      <a href="contact.html">Contact, Imprint and Privacy</a>
+    </span>
+  </div>
+</footer>
+  </body>
+</html>

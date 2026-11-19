@@ -1,0 +1,245 @@
+.. |separator| raw:: html
+
+	<div style="padding-top: 25px; border-bottom: 1px solid #d4d7d9;"></div>
+
+.. _get_started:
+
+===========
+Get Started
+===========
+
+Take a look at `Installation`_ or `Build NetworKit from Source`_ in order to install NetworKit as a Python3 package or directly build it from source.
+
+With NetworKit as a Python extension module, you get access to native high-performance code and can at the same time work interactively in the Python ecosystem.
+Although the standard Python interpreter works fine, we recommend `IPython <https://ipython.readthedocs.io/en/stable/>`_ as a great environment for scientific
+workflows. View the `IPython Quickstart Guide`_ for installation instructions and how to use NetworKit with IPython.
+
+Once you have installed NetworKit, please make sure to check out our
+`NetworKit UserGuide <https://github.com/networkit/networkit/blob/master/notebooks/User-Guide.ipynb>`_ for an overview of the features provided
+in NetworKit.
+
+|separator|
+
+.. _Installation:
+
+Installation
+============
+
+.. _Installation Requirements:
+
+Requirements
+------------
+
+NetworKit ships as a prebuilt package for Linux, macOS and Windows. To install it, you only need Python 3.10 or higher. You do not need a compiler.
+The following package managers provide NetworKit:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Package manager
+     - Python module
+     - C++ core library only
+   * - pip
+     - :code:`pip install networkit`
+     - --
+   * - conda
+     - :code:`conda install -c conda-forge networkit`
+     - :code:`conda install -c conda-forge libnetworkit`
+   * - brew
+     - :code:`brew install networkit`
+     - :code:`brew install libnetworkit`
+   * - spack
+     - :code:`spack install py-networkit`
+     - :code:`spack install libnetworkit`
+
+If you want the most recent development version, you can install a nightly build.
+We publish it on the `networkit-nightly <https://anaconda.org/networkit-nightly/networkit-nightly>`_ channel after each push to the :code:`master` branch:
+
+.. code-block:: bash
+
+  pip install --upgrade --extra-index-url https://pypi.anaconda.org/networkit-nightly/simple networkit-nightly
+
+.. _Linux:
+
+Linux
+-----
+
+On Linux, :code:`pip` is the most common way to install NetworKit.
+Recent Debian and Ubuntu releases do not let :code:`pip` install packages into the system Python.
+We therefore recommend a virtual environment:
+
+.. code-block:: bash
+
+  # Install Python3 with the venv module (Debian/Ubuntu)
+  sudo apt install python3 python3-venv
+
+  # Create and activate a virtual environment
+  python3 -m venv ~/networkit-env
+  source ~/networkit-env/bin/activate
+
+  # And finally ... install NetworKit
+  pip install networkit
+
+.. _macOS:
+
+macOS
+-----
+
+On macOS, we recommend :code:`brew` for managing NetworKit installations. The brew formula handles all dependencies.
+
+.. code-block:: bash
+
+  # Install Homebrew (if needed)
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  # Install NetworKit via brew
+  brew install networkit
+
+Alternatively, you can install NetworKit with :code:`pip` in a virtual environment, as shown for Linux.
+
+.. _Windows:
+
+Windows
+-------
+
+On Windows, first install the official `Python package <https://www.python.org/downloads/windows/>`_. Then install NetworKit from a command prompt:
+
+.. code-block:: bash
+
+  pip install networkit
+
+You can also use the `Windows Subsystem for Linux <https://learn.microsoft.com/en-us/windows/wsl/install>`_ (WSL).
+Inside WSL, follow the instructions for Linux.
+
+|separator|
+
+.. _Build NetworKit from Source:
+
+Build NetworKit from Source
+===========================
+
+You can clone NetworKit from `GitHub <https://github.com/networkit/networkit>`_ with git.
+To build NetworKit from source, you need the following software:
+
+- A modern C++ compiler, e.g.: `g++ <https://gcc.gnu.org>`_ (>= 10.0), `clang++ <https://clang.llvm.org>`_ (>= 11.0) or MSVC (>= 14.30)
+- OpenMP for parallelism (usually ships with the compiler)
+- Python3 (3.10 or higher is supported)
+
+  - Development libraries for Python3. The package name depends on your distribution. Examples:
+
+    - Debian/Ubuntu: :code:`apt-get install python3-dev`
+    - RHEL/CentOS: :code:`dnf install python3-devel`
+- `Pip <https://pypi.org/project/pip/>`_
+- `CMake <https://cmake.org/>`_ version 3.6 or higher (e.g., :code:`pip install cmake`)
+- Build System: `Make <https://www.gnu.org/software/make/>`_ or `Ninja <https://ninja-build.org/>`_
+- `Cython <https://cython.org/>`_ (e.g., :code:`pip install cython`)
+
+On Windows, the build needs the free Community Edition of `Visual Studio <https://visualstudio.microsoft.com/downloads/>`_ or higher.
+The build must be able to find the MSVC compiler (:code:`cl.exe`).
+One way to achieve this is to start the build from the "Native Tools Command Prompt" that Visual Studio provides.
+
+For the build steps, we refer to the `README file <https://github.com/networkit/networkit#building-from-source>`_ of our GitHub repository.
+
+|separator|
+
+.. _IPython Quickstart Guide:
+
+Use NetworKit with IPython
+==========================
+
+First make sure you have installed IPython, e.g. via pip: :code:`pip install ipython`.
+
+IPython Terminal
+----------------
+
+If you want to use NetworKit in the IPython terminal, type the following commands in your OS terminal:
+
+.. code-block:: bash
+
+	ipython
+
+.. code-block:: python
+
+	from networkit import *
+
+The first line opens the IPython terminal. The second line imports the *networkit* Python module. After that, you should be able to use NetworKit interactively.
+For usage examples, refer to the `NetworKit UserGuide <https://github.com/networkit/networkit/blob/master/notebooks/User-Guide.ipynb>`_.
+
+Jupyter Notebook
+----------------
+
+Additionally, we recommend that you familiarize yourself with NetworKit through experimenting with the interactive notebook :code:`User-Guide.ipynb`.
+It is located in the folder :code:`notebooks` of the NetworKit repository. The user guide introduces a large portion of NetworKit's functionality with usage examples.
+The same folder holds further notebooks on specific topics, such as centrality, community detection and graph generators.
+To display and work with these notebooks, you have to install Jupyter and start a local notebook server from the terminal with:
+
+.. code-block:: bash
+
+	pip install notebook
+	jupyter notebook
+
+If you run into any problems with Jupyter, head over to the `Jupyter documentation <https://docs.jupyter.org/en/latest/install.html>`_. If the notebook server starts as it is supposed to, your default browser should open a web interface. Otherwise, open it manually. Then open :code:`User-Guide.ipynb` from the folder :code:`notebooks`.
+
+To show plots within the notebooks, place the following two lines at the beginning of your notebook:
+
+.. code-block:: python
+
+	%matplotlib inline
+	import matplotlib.pyplot as plt
+
+NetworKit Usage Example
+=======================
+
+Now that you are done installing NetworKit, you might want to try the following example:
+
+.. code-block:: python
+
+	>>> from networkit import *
+	>>> g = generators.HyperbolicGenerator(1e5).generate()
+	>>> overview(g)
+	Network Properties:
+	nodes, edges			100000, 299711
+	directed?			False
+	weighted?			False
+	isolated nodes			1838
+	self-loops			0
+	density				0.000060
+	clustering coefficient		0.716217
+	min/max/avg degree		0, 1129, 5.994220
+	degree assortativity		-0.002406
+	number of connected components	4159
+	size of largest component	71019 (71.02 %)
+
+	>>> communities = community.detectCommunities(g, inspect=True)
+	Communities detected in 0.45748 [s]
+	solution properties:
+	-------------------  -------------
+	# communities        4381
+	min community size      1
+	max community size   1782
+	avg. community size    22.8258
+	imbalance              77.4783
+	edge cut             1416
+	edge cut (portion)      0.00472455
+	modularity              0.989744
+	-------------------  -------------
+
+	>>>
+
+|separator|
+
+Known Issues
+============
+
+-	Some algorithms (e.g. StronglyConnectedComponents) are implemented in a recursive manner and for large input may exceed the default stack size on your platform.
+	To work around this issue, you can lift the stack size limit for your terminal process and subsequent child processes with :code:`ulimit -s unlimited` or :code:`ulimit -Hs` (to the hard limit if there is one). It is also possible to change resource limits from Python directly with :code:`import resource; resource.setrlimit(resource.RLIMIT_STACK, (-1, -1))`.
+-	On macOS, it can happen that the g++ compiler is unable to locate specific Linux-based header files. An example would be an error during the compilation of a C++ header which includes :code:`stdint`. This can generate the following error message: :code:`fatal error: sys/_types/_int8_t.h: No such file or directory`. This error will most likely happen on new systems or after a major system upgrade. In this case you need to (again) install the Xcode command line tools: :code:`xcode-select --install`. Afterwards the code should compile completely.
+
+
+|separator|
+
+Contributions
+=============
+
+We would like to encourage contributions to the NetworKit source code. See the `NetworKit Development Guide <https://networkit.github.io/dev-docs/DevGuide.html#devGuide>`_ for instructions. For support
+please contact the `mailing list <https://www.lists.kit.edu/sympa/subscribe/networkit>`_.

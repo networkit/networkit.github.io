@@ -1,0 +1,16 @@
+=======
+Contact
+=======
+
+.. |mailinglist| image:: resources/mailinglist.png
+
+Questions and feedback regarding NetworKit should be addressed to the NetworKit mailing list |mailinglist|. We encourage all users to `register <https://www.lists.kit.edu/sympa/subscribe/networkit>`_ for the mailing list.
+
+NetworKit is maintained by the `Exascale Algorithm Engineering <https://eae.iti.kit.edu/english>`_
+group of the Scientific Computing Center
+at the `Karlsruhe Institute of Technology (KIT) <https://www.kit.edu/english/>`_.
+
+Visit the website of Humboldt Universtität zu Berlin for the
+`imprint <https://www.hu-berlin.de/en/hu-en/imprint/>`_ and
+`data protection statement <https://www.hu-berlin.de/de/hu/impressum/datenschutzerklaerung>`_.
+
